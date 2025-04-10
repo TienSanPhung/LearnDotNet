@@ -1,0 +1,16 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\bin\Debug\net9.0\CollectionL.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\bin\Debug\net9.0\CollectionL.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\bin\Debug\net9.0\CollectionL.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\bin\Debug\net9.0\CollectionL.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\bin\Debug\net9.0\CollectionL.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\refint\CollectionL.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\CollectionL.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\obj\Debug\net9.0\ref\CollectionL.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L1_Collection\CollectionL\CollectionL\bin\Debug\net9.0\input.txt
