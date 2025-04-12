@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "I5ggARL3uEI=",
+  "dgSpecHash": "bBiWtnME9y4=",
   "success": true,
   "projectFilePath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pts20\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.203\\microsoft.net.sdk.compilers.toolset.9.0.203.nupkg.sha512"
+    "C:\\Users\\pts20\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.203\\microsoft.net.sdk.compilers.toolset.9.0.203.nupkg.sha512",
+    "C:\\Users\\pts20\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\pts20\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\pts20\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }

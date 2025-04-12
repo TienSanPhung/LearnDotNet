@@ -1,0 +1,16 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\bin\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\bin\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\bin\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\bin\Debug\net9.0\DBExport.DatabaseObjects.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\bin\Debug\net9.0\DBExport.DatabaseObjects.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.csproj.AssemblyReference.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.463C9881.Up2Date
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\refint\DBExport.DatabaseBuilders.SqlServer.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\DBExport.DatabaseBuilders.SqlServer.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExport.DatabaseBuilders.SqlServer\obj\Debug\net9.0\ref\DBExport.DatabaseBuilders.SqlServer.dll

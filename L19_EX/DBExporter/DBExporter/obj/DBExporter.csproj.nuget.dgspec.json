@@ -1,0 +1,620 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter\\DBExporter.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders.SqlServer\\DBExport.DatabaseBuilders.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders.SqlServer\\DBExport.DatabaseBuilders.SqlServer.csproj",
+        "projectName": "DBExport.DatabaseBuilders.SqlServer",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders.SqlServer\\DBExport.DatabaseBuilders.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders\\DBExport.DatabaseBuilders.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders\\DBExport.DatabaseBuilders.csproj",
+        "projectName": "DBExport.DatabaseBuilders",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders\\DBExport.DatabaseBuilders.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders.SqlServer\\DBExport.DatabaseBuilders.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders.SqlServer\\DBExport.DatabaseBuilders.SqlServer.csproj"
+              },
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj",
+        "projectName": "DBExport.DatabaseObjects",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Abstraction\\DBExport.DatabaseWriter.Abstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Abstraction\\DBExport.DatabaseWriter.Abstraction.csproj",
+        "projectName": "DBExport.DatabaseWriter.Abstraction",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Abstraction\\DBExport.DatabaseWriter.Abstraction.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Abstraction\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseObjects\\DBExport.DatabaseObjects.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Csv\\DBExport.DatabaseWriter.Csv.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Csv\\DBExport.DatabaseWriter.Csv.csproj",
+        "projectName": "DBExport.DatabaseWriter.Csv",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Csv\\DBExport.DatabaseWriter.Csv.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Csv\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Abstraction\\DBExport.DatabaseWriter.Abstraction.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Abstraction\\DBExport.DatabaseWriter.Abstraction.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj",
+        "projectName": "DBExporter.Options",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter\\DBExporter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter\\DBExporter.csproj",
+        "projectName": "DBExporter",
+        "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter\\DBExporter.csproj",
+        "packagesPath": "C:\\Users\\pts20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pts20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders\\DBExport.DatabaseBuilders.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseBuilders\\DBExport.DatabaseBuilders.csproj"
+              },
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Csv\\DBExport.DatabaseWriter.Csv.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExport.DatabaseWriter.Csv\\DBExport.DatabaseWriter.Csv.csproj"
+              },
+              "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj": {
+                "projectPath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.203, 9.0.203]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

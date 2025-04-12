@@ -1,0 +1,12 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\bin\Debug\net9.0\DBExporter.Options.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\bin\Debug\net9.0\DBExporter.Options.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\bin\Debug\net9.0\DBExporter.Options.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\refint\DBExporter.Options.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\DBExporter.Options.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L19_EX\DBExporter\DBExporter.Options\obj\Debug\net9.0\ref\DBExporter.Options.dll
