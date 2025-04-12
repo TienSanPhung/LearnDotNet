@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "I5ggARL3uEI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pts20\\Desktop\\.net\\LearnDotNet\\L19_EX\\DBExporter\\DBExporter.Options\\DBExporter.Options.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pts20\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.203\\microsoft.net.sdk.compilers.toolset.9.0.203.nupkg.sha512"
+  ],
+  "logs": []
+}

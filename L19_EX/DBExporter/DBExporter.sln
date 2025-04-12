@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBExporter.Options", "DBExporter.Options\DBExporter.Options.csproj", "{521026FB-206D-4FC9-9022-CC54A0898F48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{521026FB-206D-4FC9-9022-CC54A0898F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521026FB-206D-4FC9-9022-CC54A0898F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521026FB-206D-4FC9-9022-CC54A0898F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521026FB-206D-4FC9-9022-CC54A0898F48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
