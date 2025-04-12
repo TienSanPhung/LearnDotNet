@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBExporter.Options", "DBExporter.Options\DBExporter.Options.csproj", "{521026FB-206D-4FC9-9022-CC54A0898F48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBExport.DatabaseBuilders.SqlServer", "DBExport.DatabaseBuilders.SqlServer\DBExport.DatabaseBuilders.SqlServer.csproj", "{FE088E40-6983-419A-82DA-4C5901E81CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBExport.DatabaseBuilders", "DBExport.DatabaseBuilders\DBExport.DatabaseBuilders.csproj", "{D02A7E21-F5D9-45B5-A1F6-F6EEDEFB1CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBExport.DatabaseObjects", "DBExport.DatabaseObjects\DBExport.DatabaseObjects.csproj", "{EB202BFF-606B-44C2-B98C-70AFB50111A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{521026FB-206D-4FC9-9022-CC54A0898F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{521026FB-206D-4FC9-9022-CC54A0898F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{521026FB-206D-4FC9-9022-CC54A0898F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE088E40-6983-419A-82DA-4C5901E81CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE088E40-6983-419A-82DA-4C5901E81CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE088E40-6983-419A-82DA-4C5901E81CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE088E40-6983-419A-82DA-4C5901E81CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02A7E21-F5D9-45B5-A1F6-F6EEDEFB1CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02A7E21-F5D9-45B5-A1F6-F6EEDEFB1CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02A7E21-F5D9-45B5-A1F6-F6EEDEFB1CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02A7E21-F5D9-45B5-A1F6-F6EEDEFB1CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB202BFF-606B-44C2-B98C-70AFB50111A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB202BFF-606B-44C2-B98C-70AFB50111A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB202BFF-606B-44C2-B98C-70AFB50111A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB202BFF-606B-44C2-B98C-70AFB50111A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

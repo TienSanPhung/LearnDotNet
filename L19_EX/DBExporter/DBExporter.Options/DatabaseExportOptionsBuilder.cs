@@ -1,5 +1,9 @@
 ﻿namespace DBExporter.Options;
 
+
+/*
+ * Usage: dbexport <connectionstring> <select query> [-f:filename] [-server:<SqlServer>] [-format:<csv|tsql>] [-compress] [-adt]
+ */
 public class DatabaseExportOptionsBuilder
 {
     private readonly string[] args;
