@@ -1,4 +1,5 @@
-﻿namespace polymorphism;
+﻿
+namespace polymorphism;
 
 class Program
 {
@@ -14,7 +15,9 @@ class Program
         animal3.A();
         Animal sonofthefish = new SonOfTheFish();
         sonofthefish.Move();
+        
     }
+   
     static Animal  Random(int id)
     {
         switch (id)

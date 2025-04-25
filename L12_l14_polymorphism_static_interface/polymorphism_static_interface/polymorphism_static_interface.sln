@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polymorphism", "polymorphism\polymorphism.csproj", "{12711D9F-AFF4-41AE-A64B-1D9E748A2483}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticSample", "StaticSample\StaticSample.csproj", "{8FE4E9DA-69E9-4677-A1FE-2D228EC10186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{12711D9F-AFF4-41AE-A64B-1D9E748A2483}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12711D9F-AFF4-41AE-A64B-1D9E748A2483}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12711D9F-AFF4-41AE-A64B-1D9E748A2483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE4E9DA-69E9-4677-A1FE-2D228EC10186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE4E9DA-69E9-4677-A1FE-2D228EC10186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE4E9DA-69E9-4677-A1FE-2D228EC10186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE4E9DA-69E9-4677-A1FE-2D228EC10186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
