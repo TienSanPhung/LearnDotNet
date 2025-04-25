@@ -1,0 +1,15 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\bin\Debug\net9.0\StaticSample.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\bin\Debug\net9.0\StaticSample.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\bin\Debug\net9.0\StaticSample.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\bin\Debug\net9.0\StaticSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\bin\Debug\net9.0\StaticSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\refint\StaticSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\StaticSample.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\StaticSample\obj\Debug\net9.0\ref\StaticSample.dll
