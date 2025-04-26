@@ -1,0 +1,15 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\bin\Debug\net9.0\InterfaceSample.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\bin\Debug\net9.0\InterfaceSample.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\bin\Debug\net9.0\InterfaceSample.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\bin\Debug\net9.0\InterfaceSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\bin\Debug\net9.0\InterfaceSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\refint\InterfaceSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\InterfaceSample.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L12_l14_polymorphism_static_interface\polymorphism_static_interface\InterfaceSample\obj\Debug\net9.0\ref\InterfaceSample.dll
