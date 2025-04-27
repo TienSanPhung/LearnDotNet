@@ -1,0 +1,15 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\bin\Debug\net9.0\nfind.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\bin\Debug\net9.0\nfind.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\bin\Debug\net9.0\nfind.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\bin\Debug\net9.0\nfind.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\bin\Debug\net9.0\nfind.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\NFind.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\NFind.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\NFind.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\NFind.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\NFind.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\nfind.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\refint\nfind.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\nfind.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\NFind.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\NCommand\NCommand\NFind\obj\Debug\net9.0\ref\nfind.dll
