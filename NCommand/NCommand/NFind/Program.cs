@@ -2,8 +2,60 @@
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        if (args.Length == 0)
+        {
+            Console.WriteLine("FIND: Parameter format not correct");
+            return;
+        }
+        var fileOptions =  BuildOptions(args);
+        var source = LineSourceFactory.CreateInstance(fileOptions.Path,fileOptions.SkipOfflineFile);
+    }
+
+    public static FileOptions BuildOptions(string[] args) 
+    {
+        var options = new FileOptions();
+        foreach (var arg in args)
+        {
+            if (arg == "/v")
+            {
+                options.FindDontConstain = true;
+            }else if (arg == "/c")
+            {
+                options.CountMode = true;
+            }else if (arg == "/i")
+            {
+                options.IsCaseSensitive = false;
+            }else if (arg == "/n")
+            {
+                options.ShowLineNumeber = true;
+            }else if (arg == "/off" || arg == "/offline")
+            {
+                options.SkipOfflineFile = false;
+            }else if (arg == "/?")
+            {
+                options.HelpMode = true;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(options.StringToFind))
+                {
+                    options.StringToFind = arg;
+                }
+                else if (string.IsNullOrEmpty(options.Path))
+                {
+                    options.Path = arg;
+                }
+                else
+                {
+                    throw new ArgumentNullException(arg);
+                }
+                
+            }
+        }
+        return options;
     }
 }
+
+
