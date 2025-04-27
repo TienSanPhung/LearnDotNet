@@ -1,0 +1,15 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\bin\Debug\net9.0\NLinQ.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\bin\Debug\net9.0\NLinQ.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\bin\Debug\net9.0\NLinQ.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\bin\Debug\net9.0\NLinQ.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\bin\Debug\net9.0\NLinQ.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\refint\NLinQ.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\NLinQ.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\PraticeLinQ\NLinQ\NLinQ\obj\Debug\net9.0\ref\NLinQ.dll
