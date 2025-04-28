@@ -1,4 +1,6 @@
-﻿namespace NFind;
+﻿using System.Runtime.InteropServices;
+
+namespace NFind;
 
 class Program
 {
@@ -10,7 +12,26 @@ class Program
             return;
         }
         var fileOptions =  BuildOptions(args);
-        var source = LineSourceFactory.CreateInstance(fileOptions.Path,fileOptions.SkipOfflineFile);
+        var sources = LineSourceFactory.CreateInstance(fileOptions.Path,fileOptions.SkipOfflineFile);
+        foreach (var source in sources)
+        {
+            ProcessSource(source);
+        }
+    }
+
+    private static void ProcessSource(ILineSource source)
+    {
+        var line = source.ReadLine();
+        while (line != null)
+        {
+            PrintLine(line);
+            line = source.ReadLine();
+        }
+    }
+
+    private static void PrintLine(Line line)
+    {
+        Console.WriteLine(line.Text);
     }
 
     public static FileOptions BuildOptions(string[] args) 
