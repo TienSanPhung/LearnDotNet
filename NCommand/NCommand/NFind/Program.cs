@@ -31,7 +31,7 @@ class Program
 
     private static void PrintLine(Line line)
     {
-        Console.WriteLine(line.Text);
+        Console.WriteLine($"[{line.LineNumber}] {line.Text}]");
     }
 
     public static FileOptions BuildOptions(string[] args) 
