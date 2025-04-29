@@ -7,6 +7,8 @@ public class ConsoleLineSource : ILineSource
     {
     }
 
+    public string Name => string.Empty;
+
     public Line? ReadLine()
     {
         var s = Console.ReadLine();

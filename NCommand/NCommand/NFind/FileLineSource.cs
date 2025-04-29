@@ -4,48 +4,53 @@ namespace NFind;
 
 public class FileLineSource : ILineSource
 {
-    private readonly string _path;
-    private StreamReader? _reader;
-    private int _lineNumber;
+    private readonly string path;
+    private readonly string fileName;
+    private StreamReader? reader;
+    private int lineNumber;
 
-    public FileLineSource(string path)
+    public FileLineSource(string path, string fileName )
     {
-        this._path = path;
+        this.path = path;
+        this.fileName = fileName;
+        
     }
+
+    public string Name => fileName;
 
     public Line? ReadLine()
     {
-        if (_reader == null)
+        if (reader == null)
         {
             throw new InvalidOleVariantTypeException();
         }
-        var s = _reader.ReadLine();
+        var s = reader.ReadLine();
         if (s == null)
         {
             return null;       
         }
         else
         {
-            return new Line() { LineNumber = ++_lineNumber, Text = s };
+            return new Line() { LineNumber = ++lineNumber, Text = s };
         }
     }
 
     public void Open()
     {
-        if (_reader != null)
+        if (reader != null)
         {
             throw new InvalidOleVariantTypeException();
         }
-        _lineNumber = 0;
-        _reader = new StreamReader(new FileStream(_path, FileMode.Open, FileAccess.Read));
+        lineNumber = 0;
+        reader = new StreamReader(new FileStream(path, FileMode.Open, FileAccess.Read));
     }
 
     public void Close()
     {
-        if(_reader!=null)
+        if(reader!=null)
         {
-            _reader.Close();
-            _reader = null;
+            reader.Close();
+            reader = null;
            
         }
         
