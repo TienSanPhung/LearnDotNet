@@ -16,11 +16,16 @@ class Program
          var cmd = connect.CreateCommand();
          cmd.CommandText = "Select country_id, country_name from countries";
         using  var reader = cmd.ExecuteReader();
-        { while (reader.Read())
+        int c = 0;
+         while (reader.Read())
          {
              Console.WriteLine($"ID: {reader["country_id"]}, Name: {reader["country_name"]}");
+             c ++;
          }
-         
-        }
+        Console.WriteLine($"total: {c} rows");
+        reader.Close();
+        using var Total = new SqlCommand("SELECT COUNT(*) FROM countries",connect);
+        int c1 = (int)Total.ExecuteScalar();
+        Console.WriteLine($"total with sqlcommand: {c1} rows");
     }
 }
