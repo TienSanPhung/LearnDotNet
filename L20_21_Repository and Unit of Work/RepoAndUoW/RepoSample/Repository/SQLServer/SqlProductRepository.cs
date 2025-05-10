@@ -103,6 +103,7 @@ public class SqlProductRepository : IProductRepository
                 });
                 
             }
+            reader.Close();
         }
         return order;
     }
