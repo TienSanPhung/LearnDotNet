@@ -11,7 +11,7 @@ public class SqlProductRepository : IProductRepository
     private readonly string UPDATE_CMD = "UPDATE  Products SET Product.Name = @product.Name, Product.Price = @product.Price, Product.Quantity= @product.Quantity";
     private readonly string DELETE_ALL_CMD = "DELETE From Products";
     private readonly string SELECT_CMD = "SELECT";
-    private readonly string FIND_ALL_CMD = "ProductName,ProductPrice,Quantity FROM Product WHERE (1=1) ";
+    private readonly string FIND_ALL_CMD = "ProductId,ProductName,ProductPrice,Quantity FROM Product WHERE (1=1) ";
     private readonly string FIND_BY_ID_CMD = "SELECT ProductName,ProductPrice,Quantity FROM Product WHERE Product.ID = @product.Id ";
     
     
@@ -36,7 +36,7 @@ public class SqlProductRepository : IProductRepository
         if (creterias.Take > 0)
         {
             sql.Append("TOP ");
-            sql.Append($@"{creterias.Take} ");
+            sql.Append(creterias.Take);
             sql.Append(' ');
         }
         sql.Append(FIND_ALL_CMD);
@@ -84,8 +84,8 @@ public class SqlProductRepository : IProductRepository
         if (creterias.Skip > 0)
         {
             sql.Append(" OFFSET ");
-            sql.Append($@"{creterias.Skip} ");
-            sql.Append("ROWS ");
+            sql.Append(creterias.Skip);
+            sql.Append(" ROWS ");
         }
         cmd.CommandText = sql.ToString();
         using var reader = cmd.ExecuteReader();
