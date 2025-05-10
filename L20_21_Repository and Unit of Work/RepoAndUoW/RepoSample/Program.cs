@@ -1,9 +1,15 @@
-﻿namespace RepoSample;
+﻿using Microsoft.Extensions.Configuration;
+
+namespace RepoSample;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        IConfiguration config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: true)
+            .AddJsonFile("ConnectionStrings.json",optional:true).Build();
+        string connectionString = config.GetConnectionString("Shop");
+        
     }
 }
