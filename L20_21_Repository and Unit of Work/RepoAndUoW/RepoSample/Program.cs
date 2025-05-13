@@ -5,6 +5,8 @@ using RepoSample.Entity;
 using RepoSample.Repository;
 using RepoSample.Repository.InMemory;
 using RepoSample.Repository.SQLServer;
+using RepoSample.UnitofWork;
+using RepoSample.UnitofWork.Sql;
 
 namespace RepoSample;
 
@@ -26,8 +28,9 @@ class Program
             IProductRepository productRepository = new SqlProductRepository(conn, tran);
             IOrderRepository orderRepository = new SqlOrderRepository(conn, tran);
             
-            productRepository.DeleteAll();
             orderRepository.DeleteAll();
+            productRepository.DeleteAll();
+            
             
             InsertProduct(productRepository);
             QueryProduct(productRepository);
@@ -53,7 +56,33 @@ class Program
 
     private static void CreateOder(SqlConnection conn)
     {
-        
+        var orderCreate = new SqlServerCheckoutUnitOfWork(conn);
+        var orderId = Guid.NewGuid();
+        orderCreate.CreateOrder(new Order()
+        {
+            Id = orderId,
+            CustomerId = Guid.Empty,
+            OrderReference = "00001",
+            OrderItems = [
+                new OrderItem()
+                {
+                    Id = new Guid("00000000-0000-0000-0001-000000000001"),
+                    OrderId = orderId,
+                    Price = 100,
+                    ProductId = new Guid("00000000-0000-0000-0000-000000000001"),
+                    Quantity = 3
+                },
+                new OrderItem()
+                {
+                    Id = new Guid("00000000-0000-0000-0001-000000000002"),
+                    OrderId = orderId,
+                    Price = 200,
+                    ProductId = new Guid("00000000-0000-0000-0000-000000000002"),
+                    Quantity = 2
+                }
+            ]
+        });
+        orderCreate.SaveChanges();
     }
 
     private static void QueryProduct(IProductRepository productRepository)
@@ -118,7 +147,7 @@ class Program
         });
         productRepository.Add(new()
         {
-            Id =new Guid("00000000-0000-0000-0000-000000000003"),
+            Id =new Guid("00000000-0000-0000-0000-000000000004"),
             Name = "Rau Húng Bạc Hà",
             Price = 400,
             Quantity = 400

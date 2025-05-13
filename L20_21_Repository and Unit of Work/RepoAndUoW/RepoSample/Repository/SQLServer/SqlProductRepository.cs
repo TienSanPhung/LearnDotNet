@@ -7,12 +7,12 @@ namespace RepoSample.Repository.SQLServer;
 
 public class SqlProductRepository : IProductRepository
 {
-    private readonly string INSERT_CMD = "INSERT INTO Products VALUES (@product.Id,@product.Name,@product.Price,@product.Quantity)";
-    private readonly string UPDATE_CMD = "UPDATE  Products SET Product.Name = @product.Name, Product.Price = @product.Price, Product.Quantity= @product.Quantity";
+    private readonly string INSERT_CMD = "INSERT INTO Products VALUES (@productId,@productName,@ProductPrice,@Quantity)";
+    private readonly string UPDATE_CMD = "UPDATE  Products SET ProductName = @productName, ProductPrice = @ProductPrice, Quantity= @Quantity WHERE ProductId = @productId";
     private readonly string DELETE_ALL_CMD = "DELETE From Products";
     private readonly string SELECT_CMD = "SELECT";
-    private readonly string FIND_ALL_CMD = "ProductId,ProductName,ProductPrice,Quantity FROM Product WHERE (1=1) ";
-    private readonly string FIND_BY_ID_CMD = "SELECT ProductName,ProductPrice,Quantity FROM Product WHERE Product.ID = @product.Id ";
+    private readonly string FIND_ALL_CMD = "ProductId,ProductName,ProductPrice,Quantity FROM Products WHERE (1=1) ";
+    private readonly string FIND_BY_ID_CMD = "SELECT ProductName,ProductPrice,Quantity FROM Products WHERE ProductID = @productId";
     
     
     
@@ -35,7 +35,7 @@ public class SqlProductRepository : IProductRepository
         StringBuilder sql = new StringBuilder(SELECT_CMD);
         if (creterias.Take > 0)
         {
-            sql.Append("TOP ");
+            sql.Append(" TOP ");
             sql.Append(creterias.Take);
             sql.Append(' ');
         }
@@ -58,10 +58,10 @@ public class SqlProductRepository : IProductRepository
             cmd.Parameters.Add(new SqlParameter("@MinPrice",SqlDbType.Decimal)).Value = creterias.MinPrice;
         }
 
-        if (String.IsNullOrEmpty(creterias.Name))
+        if (!String.IsNullOrEmpty(creterias.Name))
         {
-            sql.Append(" AND ProductName Like @Name ");
-            cmd.Parameters.Add(new SqlParameter("@Name",SqlDbType.VarChar,255)).Value = "%" + creterias.Name + "%";
+            sql.Append(" AND ProductName LIKE @Name ");
+            cmd.Parameters.Add(new SqlParameter("@Name",SqlDbType.NVarChar,255)).Value = "%" + creterias.Name + "%";
         }
 
         if (sortBy == ProductSortBy.NameAscending)
@@ -115,7 +115,7 @@ public class SqlProductRepository : IProductRepository
         {
             cmd.Transaction = _transaction;
         }
-        cmd.Parameters.Add(new SqlParameter("@product.Id",SqlDbType.UniqueIdentifier)).Value = id;
+        cmd.Parameters.Add(new SqlParameter("@productId",SqlDbType.UniqueIdentifier)).Value = id;
         using var reader = cmd.ExecuteReader();
         if (reader.Read() && reader!=null)
         {
@@ -126,7 +126,6 @@ public class SqlProductRepository : IProductRepository
                 Price = reader.GetDouble(1),
                 Quantity = reader.GetInt32(2)
             };
-            reader.Close();
         }
         else
         {
@@ -144,10 +143,10 @@ public class SqlProductRepository : IProductRepository
         {
             cmd.Transaction = _transaction;
         }
-        cmd.Parameters.Add(new SqlParameter("@product.Id",SqlDbType.UniqueIdentifier)).Value = product.Id;
-        cmd.Parameters.Add(new SqlParameter("@product.Name",SqlDbType.VarChar,255)).Value = product.Name;
-        cmd.Parameters.Add(new SqlParameter("@product.Price",SqlDbType.Decimal)).Value = product.Price;
-        cmd.Parameters.Add(new SqlParameter("@product.Quantity",SqlDbType.Int)).Value = product.Quantity;
+        cmd.Parameters.Add(new SqlParameter("@productId",SqlDbType.UniqueIdentifier)).Value = product.Id;
+        cmd.Parameters.Add(new SqlParameter("@productName",SqlDbType.NVarChar,255)).Value =product.Name ;
+        cmd.Parameters.Add(new SqlParameter("@productPrice",SqlDbType.Decimal)).Value = product.Price;
+        cmd.Parameters.Add(new SqlParameter("@Quantity",SqlDbType.Int)).Value = product.Quantity;
         if (cmd.ExecuteNonQuery() > 0)
         {
             return product;
@@ -166,9 +165,10 @@ public class SqlProductRepository : IProductRepository
         {
             cmd.Transaction = _transaction;
         }
-        cmd.Parameters.Add(new SqlParameter("product.Name",SqlDbType.VarChar,255)).Value = product.Name;
-        cmd.Parameters.Add(new SqlParameter("product.Price",SqlDbType.Decimal)).Value = product.Price;
-        cmd.Parameters.Add(new SqlParameter("product.Quantity",SqlDbType.Int)).Value = product.Quantity;
+        cmd.Parameters.Add(new SqlParameter("@productId",SqlDbType.UniqueIdentifier)).Value = product.Id;
+        cmd.Parameters.Add(new SqlParameter("@productName",SqlDbType.NVarChar,255)).Value = product.Name;
+        cmd.Parameters.Add(new SqlParameter("@productPrice",SqlDbType.Decimal)).Value = product.Price;
+        cmd.Parameters.Add(new SqlParameter("@Quantity",SqlDbType.Int)).Value = product.Quantity;
         
         return cmd.ExecuteNonQuery();
     }

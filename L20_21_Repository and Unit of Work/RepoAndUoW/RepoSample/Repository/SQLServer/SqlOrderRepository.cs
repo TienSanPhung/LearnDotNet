@@ -16,7 +16,7 @@ public class SqlOrderRepository : IOrderRepository
     private readonly string FIND_ALL_CMD = "OrderId, CustomerId, OrderReference FROM Orders WHERE (1=1)";
     private readonly string FIND_iTEM_CMD = "SELECT OrderItemId, OrderId, ProductId, Quantity, Price FROM OrderItems WHERE OrderId = @orderId";
     
-    private readonly string DELETE_ALL_ORDER_ORDER_ITEM_CMD = "DELETE FROM Orders; DELETE FROM OrderItems";
+    private readonly string DELETE_ALL_ORDER_ITEM_CMD = "DELETE FROM OrderItems; DELETE FROM Orders; ";
     
     private readonly SqlConnection _connection;
     private readonly SqlTransaction _transaction;
@@ -137,16 +137,18 @@ public class SqlOrderRepository : IOrderRepository
             cmd.CommandText = INSERT_ORDER_ITEM_CMD;
             cmd.Parameters.Clear();
             cmd.Parameters.Add(new SqlParameter("@OrderItemId",SqlDbType.UniqueIdentifier));
-            cmd.Parameters.Add(new SqlParameter("@OrderId",SqlDbType.UniqueIdentifier)).Value = order.Id;
             cmd.Parameters.Add(new SqlParameter("@ProductId",SqlDbType.UniqueIdentifier));
             cmd.Parameters.Add(new SqlParameter("@Quantity",SqlDbType.Int));
             cmd.Parameters.Add(new SqlParameter("@Price",SqlDbType.Decimal));
+            
+            cmd.Parameters.Add(new SqlParameter("@OrderId",SqlDbType.UniqueIdentifier)).Value = order.Id;
+            
             foreach (var item in order.OrderItems)
             {
-                cmd.Parameters["OderItemId"].Value = item.Id;
-                cmd.Parameters["ProductId"].Value = item.ProductId;
-                cmd.Parameters["Quantity"].Value = item.Quantity;
-                cmd.Parameters["Price"].Value = item.Price;
+                cmd.Parameters["@OrderItemId"].Value = item.Id;
+                cmd.Parameters["@ProductId"].Value = item.ProductId;
+                cmd.Parameters["@Quantity"].Value = item.Quantity;
+                cmd.Parameters["@Price"].Value = item.Price;
                 if (cmd.ExecuteNonQuery() == 0)
                 {
                     throw  new Exception("Error while inserting order item");
@@ -217,7 +219,7 @@ public class SqlOrderRepository : IOrderRepository
     public int DeleteAll()
     {
         var cmd = _connection.CreateCommand();
-        cmd.CommandText = DELETE_ALL_ORDER_ORDER_ITEM_CMD;
+        cmd.CommandText = DELETE_ALL_ORDER_ITEM_CMD;
         if (_transaction != null)
         {
             cmd.Transaction = _transaction;
