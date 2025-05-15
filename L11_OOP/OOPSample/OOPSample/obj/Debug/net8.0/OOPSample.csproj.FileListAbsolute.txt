@@ -1,0 +1,15 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\bin\Debug\net8.0\OOPSample.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\bin\Debug\net8.0\OOPSample.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\bin\Debug\net8.0\OOPSample.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\bin\Debug\net8.0\OOPSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\bin\Debug\net8.0\OOPSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\refint\OOPSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\OOPSample.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L11_OOP\OOPSample\OOPSample\obj\Debug\net8.0\ref\OOPSample.dll
