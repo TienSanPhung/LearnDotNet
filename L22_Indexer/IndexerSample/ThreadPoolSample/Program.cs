@@ -4,6 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        for (int i = 1; i <= 100; i++) {
+            int capturedI = i;
+
+            MyThreadPool.QueueUserWorkItem(() => {
+                Console.WriteLine($"{capturedI} (thread #{Environment.CurrentManagedThreadId})");
+            });
+        }
+
+        Console.ReadLine();
     }
 }
