@@ -20,3 +20,72 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# -----------------------------
+# Kết quả build (build outputs)
+# -----------------------------
+bin/
+obj/
+
+# -----------------------------
+# Gói NuGet và các gói rebuild cũ
+# -----------------------------
+packages/
+*.nupkg
+*.snupkg
+
+# -----------------------------
+# Kết quả của các quá trình test
+# -----------------------------
+TestResults/
+
+# -----------------------------
+# File log, file tạm, và backup
+# -----------------------------
+*.log
+logs/
+*~
+~$*
+
+# -----------------------------
+# File cơ sở dữ liệu SQL (nếu có)
+# -----------------------------
+*.mdf
+*.ldf
+
+# -----------------------------
+# File hệ thống không cần thiết
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Cấu hình và dữ liệu của Visual Studio Code (nếu dùng)
+# -----------------------------
+.vscode/
+
+# -----------------------------
+# Cấu hình và file tạm của JetBrains Rider
+# Đừng bỏ qua toàn bộ thư mục .idea vì một số cài đặt dự án (như code style, vcs.xml)
+# có thể chia sẻ giữa các thành viên trong nhóm. Chỉ cần ignore các file user-specific và kết quả tự tạo.
+# -----------------------------
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/sonarlint/
+.idea/sonarlint.xml
+.idea/httpRequests/
+.idea/caches/
