@@ -1,0 +1,15 @@
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\bin\Debug\net8.0\ThreadPoolSample.exe
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\bin\Debug\net8.0\ThreadPoolSample.deps.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\bin\Debug\net8.0\ThreadPoolSample.runtimeconfig.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\bin\Debug\net8.0\ThreadPoolSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\bin\Debug\net8.0\ThreadPoolSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.AssemblyInfoInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.AssemblyInfo.cs
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.csproj.CoreCompileInputs.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.sourcelink.json
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\refint\ThreadPoolSample.dll
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.pdb
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ThreadPoolSample.genruntimeconfig.cache
+C:\Users\pts20\Desktop\.net\LearnDotNet\L22_Indexer\IndexerSample\ThreadPoolSample\obj\Debug\net8.0\ref\ThreadPoolSample.dll
