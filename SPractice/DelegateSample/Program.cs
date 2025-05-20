@@ -1,10 +1,16 @@
 ﻿using System.Text;
+using DelegateSample.EX3;
 
 namespace DelegateSample;
 
+
+public  delegate int MathOp(int a, int b);
+public delegate void PluginHandler(string data);
+
+
 class Program
 {
-    public  delegate int MathOp(int a, int b);
+    
     
     static void Main(string[] args)
     {
@@ -12,9 +18,20 @@ class Program
         // bài 1
         Bai1();
         // bài 2
-        Bai2("Alo");
+        Bai2("tại sao yêu nhau không đến được với nhau");
+        // bài 3
+        Bai3("để giờ đây hai ta phải khổ đau");
     }
 
+    static async Task Bai3(string msg)
+    {
+        var disPatcher = new PluginDispatcher();
+        
+        disPatcher.Register(Analyze.AnalyzePlugin);
+        disPatcher.Register(Save.SavePlugin);
+        disPatcher.Register(async data => await Send.SendPlugin(data));
+        disPatcher.Dispatch(msg);
+    }
     static void Bai2(string msg)
     {
         var notification = new Notifycation();
