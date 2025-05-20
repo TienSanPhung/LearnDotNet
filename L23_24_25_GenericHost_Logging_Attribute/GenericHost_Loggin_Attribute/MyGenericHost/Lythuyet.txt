@@ -1,0 +1,21 @@
+﻿------------- Generic Host -----------------
+
+
+- một generic host là một đối tượng bao gói toàn bộ tài nguyên và cơ chế vòng đời của một ứng dụng, bao gồm
+ -> Dependency Injection để quản lý và khởi tạo đối tượng
+ -> Logging với Logging và providers mặc định như console và debug
+ -> Configuration tích hợp appsetings.json và biến môi trường, commandline
+ -> AppShutdown, xử lý tín hiệu OS và gọi IHostedServices.StopAsync
+ 
+- HostApplicationBuilder (Host.CreateApplicationBuilder(args)) cung cấp cách cấu hình mới từ .NET 6 trở đi, 
+tích hợp sẵn builder cho DI, config, logging 
+-IHostBuilder (Host.CreateDefaultBuilder(args)) là API truyền thống, khởi tạo mặc định với cấu hình, 
+logging, DI, và có thể gọi ConfigureServices, ConfigureAppConfiguration
+
+==>  Lý do chính để đưa tất cả các tài nguyên phụ thuộc lẫn nhau của ứng dụng vào một đối tượng 
+là để quản lý vòng đời: kiểm soát quá trình khởi động và tắt ứng dụng một cách bình thường.
+
+==> IHostedService định nghĩa hai phương thức StartAsync và StopAsync. Khi host khởi động, nó sẽ gọi lần 
+lượt StartAsync của tất cả dịch vụ đăng ký 
+--> BackgroundService là một abstract class tiện lợi, cung cấp sẵn vòng lặp ExecuteAsync(CancellationToken) 
+và xử lý token, bạn chỉ cần override phương thức này để CÀI ĐẶT LOGIC chạy nền.
