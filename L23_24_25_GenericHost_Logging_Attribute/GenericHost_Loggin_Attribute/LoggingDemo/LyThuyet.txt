@@ -1,0 +1,10 @@
+﻿--------------- Logging ---------------
+
+-> logging là thành phần thiết yếu để theo dõi, giải quyết sự cố và giám sát hành vi ứng dụng 
+ 
+ 
+ các bước:
+ -> tạo ra một logger factory cấu hình đăng ký ít nhất một provider cho factory
+ -> tạo ra một logger từ factory và truyền vào logger ta muốn ghi log
+ 
+ 
