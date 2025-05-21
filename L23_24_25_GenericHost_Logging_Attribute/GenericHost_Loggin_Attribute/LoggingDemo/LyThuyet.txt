@@ -8,3 +8,6 @@
  -> tạo ra một logger từ factory và truyền vào logger ta muốn ghi log
  
  
+ => logger có cấp độ, và chỉ khi các thông tin ở mức độ nghiêm trọng bằng hoặc hơn cấp độ thì nó mới được in ra
+ => có thể cài đặt cấu hình cấp độ và filter ở provider cho factory
+ 
