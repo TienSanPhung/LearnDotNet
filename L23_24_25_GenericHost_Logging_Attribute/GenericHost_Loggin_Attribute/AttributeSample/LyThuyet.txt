@@ -1,0 +1,9 @@
+﻿-------------- Attribute ------------------
+
+
+
+-> cho phép thêm thông tin vào các property, hàm, method, class
+hay nói cách khác, nó cho phép thêm các metadata vào các thành phần mà chúng ta khai báo
+
+=> nên hoạc thuộc các tính năng hay công dụng từng attribute mà ta hay dùng thay vì nó như từ vựng trong tiếng anh vậy.
+

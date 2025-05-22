@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGenericHost", "MyGenericH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingDemo", "LoggingDemo\LoggingDemo.csproj", "{AFE61359-6D37-4167-ACBD-7B6590AF3D6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttributeSample", "AttributeSample\AttributeSample.csproj", "{C222628D-7B07-4028-9557-AB6FE01E25D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{AFE61359-6D37-4167-ACBD-7B6590AF3D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE61359-6D37-4167-ACBD-7B6590AF3D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE61359-6D37-4167-ACBD-7B6590AF3D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C222628D-7B07-4028-9557-AB6FE01E25D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C222628D-7B07-4028-9557-AB6FE01E25D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C222628D-7B07-4028-9557-AB6FE01E25D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C222628D-7B07-4028-9557-AB6FE01E25D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

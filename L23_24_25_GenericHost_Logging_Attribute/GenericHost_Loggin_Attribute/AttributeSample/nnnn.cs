@@ -1,0 +1,1 @@
+﻿namespace AttributeSample;public class Nnnn{    [DbMethod("Customer")]    public static void PrintHello1()    {        Console.WriteLine("Hello, Customer!");    }    [DbMethod("User")]    public static void PrintHello2()    {        Console.WriteLine("Hello, User!");    }}
