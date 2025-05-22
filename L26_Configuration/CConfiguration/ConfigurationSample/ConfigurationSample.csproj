@@ -7,4 +7,29 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-preview.4.25258.110" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.0-preview.4.25258.110" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="10.0.0-preview.4.25258.110" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.0-preview.4.25258.110" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.0-preview.4.25258.110" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.KeyPerFile" Version="10.0.0-preview.4.25258.110" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="10.0.0-preview.4.25258.110" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="ConfigFile\appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="ConfigFile\appsettings.xml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="ConfigFile\appsettings.options.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="ConfigFile\KeyPerFile\KeyPerFileConfigSample_StringValue">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
