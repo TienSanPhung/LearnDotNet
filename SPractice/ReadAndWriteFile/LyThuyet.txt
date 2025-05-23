@@ -1,0 +1,33 @@
+﻿--------------  đọc ghi file ---------
+
+- Stream là một luồng dữ liệu tuần tự, giúp xử lý thông tin mà không cần
+tải toàn bộ vào bộ nớ.
+ -> FileStream: đọc/ghi dữ liệu từ file nhị phân hoặc văn bản
+ -> MemoryStream: dữ liệu được lưu vào bộ nhớ Ram thay vì file
+ -> BufferedStream: Tăng hiệu suất bằng cách lưu trữ dữ liệu tạm thời 
+ trước khi đọc ghi
+ -> StreamReader/StreamWriter: dành cho đọc file văn bản text
+ 
+=> đọc, ghi toàn bộ nội dung vào file: File.WriteAllText,ReadAllText -> tạo và ghi đè, đọc
+=> đọc, ghi từng dòng: File.WriteAllLines, ReadAllLines -> ghi, đọc danh sách các dòng vào file
+=> đọc, ghi từng phần: StreamWriter, StreamReader -> ghi file linh hoạt hơn
+
+=> đọc, ghi theo dạng byte: FileStream -> làm  việc với dữ liệu nhị phân
+(thường đi kèm dùng byte rồi ghi byte vào file), Write,Read.
+-> với đọc ghi kiểu byte, ta sẽ mở file bằng filestream rồi khai báo một 
+mảng byte làm bộ nhớ đệm, sau đó đọc từng phần của file bằng với số byte
+khai báo làm bộ nhớ đệm đó, điều này tránh việc đọc toàn bộ file một lần
+-> tránh tốn RAM
+-> suy ra được việc nó sẽ có con trỏ để trỏ đến vị trí để đọc 
+(cái này là dùng phương thức Seek(vị trí đọc,đọc đầu/ đọc cuối))
+-> đọc được ở dạng byte có thể giải mã dữ liệu nhị phận, chuyển nó thành chuỗi
+bằng Encoding.UTF8.GetString()
+=> người ta cũng hay dùng cách này để đọc file ảnh và file âm thanh.
+
+-> quản lý file và thư mục: File.Exists(), Delete(), CreateDirectory()
+Directory.Delete(), 
+
+- với BufferedStream
+ -> làm việc với NetWorkStream để giảm số lần gửi/nhận dữ liệu.
+ -> đọc ghi file lớn
+ 

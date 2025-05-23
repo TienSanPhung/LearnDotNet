@@ -1,0 +1,5 @@
+Creates an ILoggerFactory.
+The ILoggerFactory stores all the configuration that determines where log messages are sent.
+In this case, you configure the console logging provider so that log messages are written to the console.
+Creates an ILogger with a category named Program.
+ The category is a string that is associated with each message logged by the ILogger object.
