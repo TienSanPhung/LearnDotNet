@@ -1,7 +1,7 @@
 # LearnDotNet
 tớ học dotnet với chú Nam
 Nam'Repo: https://github.com/daohainam/lets-learn-dotnet
-# Project mình làm luyện tập, lấy đề bà từ roadmap.sh
+# Project mình làm luyện tập, lấy đề bài từ roadmap.sh
 Project Task URL : https://roadmap.sh/projects/task-tracker
 # Danh sách các bài học:
 
