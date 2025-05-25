@@ -18,6 +18,7 @@ public class ExpenseRepository : IRepository
 
     public Expense Create(Expense expense)
     {
+        expense.Id = _expenses.Any()  ?  _expenses.Max(x=> x.Id) + 1 : 0 ;
         _expenses.Add(expense);
         _datastore.SaveChange(_expenses);
         return expense;
@@ -37,10 +38,10 @@ public class ExpenseRepository : IRepository
         Expense E = _expenses.FirstOrDefault(x => x.Id == expense.Id);
         if (E != null)
         {
-            E.Description = expense.Description;
-            E.Amount = expense.Amount;
+            E.Description = expense.Description ?? E.Description;
+            E.Amount = expense.Amount == 0 ? E.Amount : expense.Amount;
             E.Date = DateTime.Now;
-            E.Category = expense.Category;
+            E.Category = expense.Category  ?? E.Category ;
             _datastore.SaveChange(_expenses);
         }
         return E;
@@ -59,7 +60,7 @@ public class ExpenseRepository : IRepository
 
     public double Summary(int? mouth)
     {
-        if (mouth == null)
+        if (mouth == 0)
         {
             return _expenses.Sum(x => x.Amount);
         }else

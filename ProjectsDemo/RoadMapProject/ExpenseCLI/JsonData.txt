@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 0,
+    "Description": "kh\u00F3a h\u1ECDc ti\u1EBFng anh",
+    "Amount": 304,
+    "Date": "2025-05-25T19:51:45.3634562+07:00",
+    "Category": "mua s\u1EAFm"
+  },
+  {
+    "Id": 2,
+    "Description": "mua \u00E1o",
+    "Amount": 104,
+    "Date": "2025-05-25T19:27:17.6127477+07:00",
+    "Category": "mua s\u1EAFm"
+  },
+  {
+    "Id": 3,
+    "Description": "mua x\u00E0 ph\u00F2ng t\u1EAFm",
+    "Amount": 54.3,
+    "Date": "2025-05-25T19:53:58.7507218+07:00",
+    "Category": "sinh ho\u1EA1t"
+  }
+]

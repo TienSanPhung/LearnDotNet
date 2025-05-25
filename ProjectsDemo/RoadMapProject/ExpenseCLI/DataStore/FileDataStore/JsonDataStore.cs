@@ -6,7 +6,7 @@ namespace ExpenseCLI.DataStore.FileDataStore;
 public class JsonDataStore : IDataStore 
 {
     readonly string _path;
-
+    public List<Expense> Expenses = new List<Expense>();
     public JsonDataStore(string path)
     {
         this._path = path;
@@ -17,16 +17,20 @@ public class JsonDataStore : IDataStore
         if (File.Exists(_path))
         {
             var json = File.ReadAllText(_path);
-            if (json == null)
+            if (String.IsNullOrEmpty(json))
             {
-                return new List<Expense>();
+                Expenses = new List<Expense>();
             }
             else
             {
-                return JsonSerializer.Deserialize<List<Expense>>(json)?? new List<Expense>();
+                Expenses = JsonSerializer.Deserialize<List<Expense>>(json);
             }
         }
-        return new List<Expense>();
+        else
+        {
+            SaveChange(Expenses);
+        }
+        return Expenses;
     }
 
     public void SaveChange(List<Expense> expenses)
