@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCLI", "TaskCLI\TaskCLI.csproj", "{37F59ED8-09D3-4844-AE88-607CFA67D535}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseCLI", "ExpenseCLI\ExpenseCLI.csproj", "{93A663F0-30CE-4BA0-9138-FB651D49390B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{37F59ED8-09D3-4844-AE88-607CFA67D535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37F59ED8-09D3-4844-AE88-607CFA67D535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37F59ED8-09D3-4844-AE88-607CFA67D535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A663F0-30CE-4BA0-9138-FB651D49390B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A663F0-30CE-4BA0-9138-FB651D49390B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A663F0-30CE-4BA0-9138-FB651D49390B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A663F0-30CE-4BA0-9138-FB651D49390B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
