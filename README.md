@@ -1,9 +1,9 @@
 # LearnDotNet
-tớ học dotnet với chú Nam
-Nam'Repo: https://github.com/daohainam/lets-learn-dotnet
+- tớ học dotnet với chú Nam
+- Nam'Repo: https://github.com/daohainam/lets-learn-dotnet
 # Project mình làm luyện tập, lấy đề bài từ roadmap.sh
-Project Task URL : https://roadmap.sh/projects/task-tracker
-Project Expense URL : https://roadmap.sh/projects/expense-tracker
+- Project Task URL : https://roadmap.sh/projects/task-tracker
+- Project Expense URL : https://roadmap.sh/projects/expense-tracker
 # Danh sách các bài học:
 
 - Stream và File
