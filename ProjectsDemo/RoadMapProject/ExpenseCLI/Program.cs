@@ -79,6 +79,24 @@ class Program
            
             var expense = repository.Summary(op.Month);
             Console.WriteLine($"# Total expenses: {expense}");
+        }else if (args[0].Equals("export-csv"))
+        {
+           var csv = repository.List();
+           string fileCsv = "expense.csv";
+           ExportCsv(csv, fileCsv);
+           Console.WriteLine("Export success");
+        }
+    }
+
+    static void ExportCsv(List<Expense> csv, string fileCsv)
+    {
+        using (var writer = new StreamWriter(fileCsv, false, Encoding.UTF8))
+        {
+            writer.WriteLine("Id,Description,Amount,Date,Category");
+            foreach (var expense in csv)
+            {
+                writer.WriteLine($"{expense.Id},{expense.Description},{expense.Amount},{expense.Date.ToShortDateString()},{expense.Category}");
+            }
         }
     }
 
