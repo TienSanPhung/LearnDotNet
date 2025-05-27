@@ -20,4 +20,10 @@ thành phần:
 - ServiceCollection: chứa các hàm khởi tạo các class sẽ tiêm
 - ServiceProvider: chịu trách nhiệm lựa chọn và khởi tạo các class mà ta cần
 - Contructor Injection: một cách nữa để sử dụng dependency -> ta có thể xin cấp phát các object khác thông
-qua contructor của đối tượng -> .ne sẽ tự động tạo ra các object cần thiết đó.
+qua contructor của đối tượng -> .net sẽ tự động tạo ra các object cần thiết đó.
+
+sử dụng: 
+-> có 3 phương thức thêm các interface và implementation của nó theo các chu kỳ vòng đời của object
+-> AddTransient: tạo mới mỗi khi được yêu cầu
+-> AddSingleton: 1 phiên bản duy  nhất cho toàn bộ ứng dụng
+-> AddScoped: 1 phiên bản duy nhất trong một phạm vi
