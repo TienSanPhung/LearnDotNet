@@ -27,3 +27,5 @@ sử dụng:
 -> AddTransient: tạo mới mỗi khi được yêu cầu
 -> AddSingleton: 1 phiên bản duy  nhất cho toàn bộ ứng dụng
 -> AddScoped: 1 phiên bản duy nhất trong một phạm vi
+ 
+#chú ý: nếu dùng cùng một interface rồi add nhiều implement, thì các implementation trên sẽ bị bên dưới ghi đè
