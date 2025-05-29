@@ -1,0 +1,8 @@
+﻿-------------- CACHING ---------------
+
+
+# về mặt khái niệm: caching là một kỹ thuật tối ưu giúp tăng tốc độ truy xuất dữ liệu
+bằng cách lưu trữ dữ liệu thường dùng tạm thời trong bộ nhớ nhanh (RAM,CPU), tránh truy xuất đến nuồn nhiều lần
+
+
+# 

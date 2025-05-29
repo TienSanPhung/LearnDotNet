@@ -1,0 +1,30 @@
+﻿-------------- LÀM QUEN CÁC KHÁI NIỆM TRONG THIẾT KẾ PHẦN MỀM --------------
+
+# KIẾN TRÚC PHẦN MỀM LÀ GÌ
+- là bản thiết kế tổng thể của một hệ thống phần mềm, nó định nghĩa cấu trúc, 
+các thành phần chính và cách chúng tương tác với nhau cũng như các quyết định 
+quan trọng về công nghệ và các mẫu thiết kế được áp dụng.
+
+ngắn gọn là: Kiến trúc phần mềm là việc đưa ra có thể chia ứng dụng thành những component nào và mối quan hệ, 
+sự tương tác của chúng với nhau như thế nào.
+
+trả lời cho các câu hỏi: 
+ -> làm sao để tìm ra các component có trong hệ thống?
+ -> các component sẽ hợp tác với nhau như thế nào?
+ 
+# DEPENDENCY (sự phụ thuộc): trong một phần mềm sự phụ thuộc càng lớn thì phần mềm càng khó bảo trì, khi thay đổi một 
+mắt xích trong đó, thì phải thay đổi tất cả các thành phần bị phụ thuộc -> khi thiết kế chúng ta luôn thiết kế các thành
+phần ít phụ thuộc vào nhau nhất có thể
+-> Mức độ phụ thuộc giữa các thành phần bên trong một phần mềm càng thấp thì chi phí bảo trì càng thấp. 
+-> Tránh cách mối phụ thuộc trực tiếp đến các concrete class(các lớp triển khai cụ thể), vì chúng phụ thuộc vào 
+rất nhiều các thành phần khác. 
+-> Đặc biệt tránh các mối quan hệ xoay vòng.
+-> Tất cả các phương pháp thiết kế hay kiến trúc phần mềm đều coi việc giảm phụ thuộc hoặc cách ly các thành phần
+ với nhau (sử dụng interface hoặc API) là một trong những yếu tố quan trọng nhất: microservice hoặc DDD chia tách các 
+ thành phần vào từng service/bounded context, Clean Architecture và n-tier chia thành các lớp và chỉ cho phép phụ thuộc
+ theo 1 hướng, OOAD nhấn mạnh sự dụng trừu tượng hóa mỗi khi có thể, SOLID có dependency inversion, và nhiều design 
+ pattern được tạo ra cũng cho mục đích này...
+ 
+# DOMAIN
+-> khi viết một phần mềm, thì Domain chính là lính vực mà phần mềm giải quyết
+-> nghĩa là cái bài toàn mà ta cần giải quyết đấy
