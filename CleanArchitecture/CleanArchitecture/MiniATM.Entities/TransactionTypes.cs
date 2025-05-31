@@ -2,6 +2,6 @@
 
 public enum TransactionTypes
 {
-    Withdraw,
+    Withdrawal,
     Deposit
 }
