@@ -3,5 +3,5 @@
 public interface ICashStorage
 {
     bool IsCashAmountAvailable(double amount);
-    void Withdraw(double amount);
+    bool Withdraw(double amount);
 }

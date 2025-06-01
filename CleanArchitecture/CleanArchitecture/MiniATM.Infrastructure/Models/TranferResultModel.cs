@@ -1,0 +1,9 @@
+﻿using MiniATM.UseCases;
+
+namespace MiniATM.Infrastructure.Models;
+
+public class TranferResultModel : TranferModel
+{
+    public required TransactionResultCodes  ResultCode {get;set;}
+    public required string Message {get;set;}
+}

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Entities", "MiniATM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.UseCases", "MiniATM.UseCases\MiniATM.UseCases.csproj", "{756F2FE0-ECD2-4DAF-A445-5B74C56070C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Infrastructure", "MiniATM.Infrastructure\MiniATM.Infrastructure.csproj", "{2620467B-7495-406C-A561-D7402B04FAB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{756F2FE0-ECD2-4DAF-A445-5B74C56070C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{756F2FE0-ECD2-4DAF-A445-5B74C56070C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{756F2FE0-ECD2-4DAF-A445-5B74C56070C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2620467B-7495-406C-A561-D7402B04FAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2620467B-7495-406C-A561-D7402B04FAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2620467B-7495-406C-A561-D7402B04FAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2620467B-7495-406C-A561-D7402B04FAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

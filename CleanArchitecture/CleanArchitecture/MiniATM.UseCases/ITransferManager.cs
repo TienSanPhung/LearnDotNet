@@ -1,6 +1,6 @@
 ﻿namespace MiniATM.UseCases;
 
-public interface ITranferManager
+public interface ITransferManager
 {
     Task<TransactionResult> TransferAsync(string fromAccountId,string toAccountId,double amount);
 }
