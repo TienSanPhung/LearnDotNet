@@ -7,7 +7,7 @@ public class MiniATMContext : DbContext
     private string _connectionString;
     public MiniATMContext()
     {
-        _connectionString = @"Server=localhost,1433;Database=MiniATM;Use Id=SA;Password=Daicabavi1;TrustServerCertificate=True";
+        _connectionString = @"Server=localhost,1433;Database=MiniATM;User Id=SA;Password=Daicabavi1;TrustServerCertificate=True";
     }public MiniATMContext(string connectionString)
     {
         _connectionString = connectionString;
