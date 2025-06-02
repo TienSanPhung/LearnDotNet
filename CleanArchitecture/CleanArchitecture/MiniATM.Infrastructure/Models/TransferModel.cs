@@ -1,6 +1,6 @@
 ﻿namespace MiniATM.Infrastructure.Models;
 
-public class TranferModel
+public class TransferModel
 {
     public required string FromBankAccount {get;set;}
     public required string ToBankAccount {get;set;}

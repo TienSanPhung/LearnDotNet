@@ -35,7 +35,7 @@ public class CoreBankingController : Controller
     [HttpGet]
     public IActionResult Transfer(string bankAccount)
     {
-        return View(new TranferModel()
+        return View(new TransferModel()
         {
             FromBankAccount = bankAccount,
             ToBankAccount = String.Empty,
@@ -44,11 +44,11 @@ public class CoreBankingController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> TransferAsync([FromForm] TranferModel model)
+    public async Task<IActionResult> TransferAsync([FromForm] TransferModel model)
     {
         ArgumentNullException.ThrowIfNull(model);
         var result = await transferManager.TransferAsync(model.FromBankAccount, model.ToBankAccount, model.Amount);
-        return View("TransferResult",new TranferResultModel()
+        return View("TransferResult",new TransferResultModel()
         {
             FromBankAccount = model.FromBankAccount,
             ToBankAccount = model.ToBankAccount,
@@ -64,16 +64,15 @@ public class CoreBankingController : Controller
     [HttpGet]
     public IActionResult Withdraw(string bankAccount)
     {
-        return View(new TranferModel()
+        return View(new WithdrawModel()
         {
             FromBankAccount = bankAccount,
-            ToBankAccount = String.Empty,
             Amount = 0
         });
     }
 
     [HttpPost]
-    public async Task<IActionResult> WithdrawAsync([FromForm] TranferModel model)
+    public async Task<IActionResult> WithdrawAsync([FromForm] WithdrawModel model)
     {
         ArgumentNullException.ThrowIfNull(model);
         var result = await cashWithdrawalManager.WithdrawAsync(model.FromBankAccount, model.Amount);
