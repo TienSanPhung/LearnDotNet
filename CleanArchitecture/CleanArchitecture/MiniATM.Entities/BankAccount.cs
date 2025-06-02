@@ -1,4 +1,6 @@
-﻿namespace MiniATM.Entities;
+﻿using MiniATM.Entities.Exceptions;
+
+namespace MiniATM.Entities;
 
 public class BankAccount
 {
@@ -10,8 +12,8 @@ public class BankAccount
     {
         set
         {
-            if (value < MinimumRequiredAmount) throw new InvalidOperationException();
-            Balance = value;
+            if (value < MinimumRequiredAmount) throw new InValidBalanceException();
+            balance = value;
         }
         get
         {
