@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Infrastructure", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.Infrastructure.SqlServer", "MiniATM.Infrastructure.SqlServer\MiniATM.Infrastructure.SqlServer.csproj", "{99207C69-090A-4381-AE74-68974D370CDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniATM.UseCases.Caching", "MiniATM.UseCases.Caching\MiniATM.UseCases.Caching.csproj", "{C551B237-E0E7-4B08-9EEB-DC352073CCB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{99207C69-090A-4381-AE74-68974D370CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99207C69-090A-4381-AE74-68974D370CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99207C69-090A-4381-AE74-68974D370CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C551B237-E0E7-4B08-9EEB-DC352073CCB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C551B237-E0E7-4B08-9EEB-DC352073CCB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C551B237-E0E7-4B08-9EEB-DC352073CCB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C551B237-E0E7-4B08-9EEB-DC352073CCB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
