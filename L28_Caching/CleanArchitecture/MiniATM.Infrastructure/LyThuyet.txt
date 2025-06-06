@@ -1,0 +1,20 @@
+﻿-------------- CACHING ---------------
+
+
+# về mặt khái niệm: caching là một kỹ thuật tối ưu giúp tăng tốc độ truy xuất dữ liệu
+bằng cách lưu trữ dữ liệu thường dùng tạm thời trong bộ nhớ nhanh (RAM,CPU), tránh truy xuất đến nuồn nhiều lần.
+
+lưu ý rằng: khi sử dụng caching chúng ta phải lưu ý đến thời gian hoạt động lưu trữ của caching vì khi thời gian tồn
+tại càng lâu thì hiệu năng đạt được càng lớn, thế nhưng độ chính xác của dữ liệu càng giảm do thiếu sự đồng nhất với
+cơ sở dữ liệu.
+
+ 
+# có 2 lớp Caching trong .net là:
+- Microsoft.Extention.Caching.Memory -> chỉ sử dụng duy nhất trong tiến trình bộ đệm tại bộ nhớ, không thể chia sẻ
+bộ đệm ra cho nhiều ứng dụng khác được, thường dùng trong ứng dụng client.
+thông thươn trong mỗi một ứng dụng chỉ có 1 vùng nhớ để cấp cho MemoryCaches thôi
+- Microsoft.Extention.Caching.Distributed -> chậm hơn nhiều so với memory caches vì nó phải convert sang một dạng 
+dữ liệu có thể truyền qua đường mạng và convert lại khi nhận. tốc độ truyền mạng giữa máy sử dụng và máy lưu trữ caches
+sẽ ảnh hưởng đáng kể đến tốc độ
+# Decorator pattern 
+- thêm chức năng cho một object mà không thay đổi code cũ của nó
