@@ -17,7 +17,7 @@ public class SqlServerBankAccountRepository : IBankAccountRepository
         this._mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
     }
 
-    public async Task<Entities.BankAccount> FindByIdAsync(string accountId)
+    public async Task<BankAccount> FindByIdAsync(string accountId)
     {
         var dbAccount = await _context.BankAccounts.Where(ba => ba.Id == accountId).FirstOrDefaultAsync();
         return _mapper.Map<Entities.BankAccount>(dbAccount);
