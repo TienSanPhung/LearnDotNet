@@ -1,10 +1,13 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using MiniATM.Infrastructure.CashStorage;
+using MiniATM.Infrastructure.InMemory;
 using MiniATM.Infrastructure.Models;
 using MiniATM.Infrastructure.SqlServer.Repository;
 using MiniATM.Infrastructure.SqlServer.Repository.DataContext;
 using MiniATM.Infrastructure.SqlServer.Repository.MapperProfile;
+using MiniATM.UseCase.Caching;
 using MiniATM.UseCases;
 using MiniATM.UseCases.Repositories;
 using MiniATM.UseCases.UnitOfWork;
@@ -66,30 +69,83 @@ public class Program
             services.AddTransient<ITransactionRepository>(services => new SqlServerTransactionRepository(
                 services.GetRequiredService<MiniATMContext>(), services.GetRequiredService<IMapper>()
             ));
-            services.AddTransient<IBankAccountFinder>(services => new RepositoryBankAccountFinder(
-                services.GetRequiredService<IBankAccountRepository>()
-            ));
             services.AddTransient<ITransactionUnitOfWork>(services => new SqlServerTransactionUnitOfWork(
                 services.GetRequiredService<MiniATMContext>(), services.GetRequiredService<IMapper>()
             ));
-
-            services.AddSingleton<ICashStorage>(services => new InMemoryCashStorage(
-                services.GetRequiredService<ILogger<InMemoryCashStorage>>(),
-                5000
-            ));
-            services.AddTransient<ICashWithdrawalManager>(services => new CashWithdrawalManager(
-                services.GetRequiredService<ITransactionUnitOfWork>(),
-                services.GetRequiredService<ICashStorage>(),
-                true
-            ));
-            services.AddTransient<ITransferManager>(services => new TransferManager(
-                services.GetRequiredService<ITransactionUnitOfWork>()
-            ));
+            
 
         }
         else
         {
             // we need to implement remote repositories and register here
+            
+            services.AddTransient<IBankAccountRepository>(services => new InMemoryBankAccountRepository());
+            services.AddTransient<ICustomerRepository>(services => new InMemoryCustomerRepository());
+            services.AddTransient<ITransactionRepository>(services => new InMemoryTransactionRepository());
+            services.AddTransient<ITransactionUnitOfWork>(services => new InMemoryTransactionUnitOfWork());
         }
+        
+        var cacheOptions = configuration.GetSection("CacheOptions").Get<CacheOptions>() ?? new CacheOptions();
+        InitializeCache(services, configuration, cacheOptions);
+        
+        services.AddSingleton<ICashStorage>(services => new InMemoryCashStorage(
+            services.GetRequiredService<ILogger<InMemoryCashStorage>>(),
+            5000
+        )); // must be singleton
+        
+        services.AddTransient<IBankAccountFinder>(services => new CachableBankAccountFinder(new RepositoryBankAccountFinder(
+                services.GetRequiredService<IBankAccountRepository>()
+            ),
+            services.GetRequiredService<IDistributedCache>(),
+            configuration.GetSection("CachableBankAccountFinderOptions").Get<CachableBankAccountFinderOptions>() ?? new(),
+            services.GetRequiredService<ILogger<CachableBankAccountFinder>>()
+        ));
+
+        services.AddTransient<ICashWithdrawalManager>(services => new CashWithdrawalManager(
+            services.GetRequiredService<ITransactionUnitOfWork>(),
+            services.GetRequiredService<ICashStorage>(),
+            true
+        ));
+
+        services.AddTransient<ITransferManager>(services => new TransferManager(
+            services.GetRequiredService<ITransactionUnitOfWork>()
+        ));
+        
+    }
+
+    static void InitializeCache(IServiceCollection services, ConfigurationManager configuration, CacheOptions cacheOptions)
+    {
+        switch (cacheOptions.Type) { 
+            case CacheTypes.Memory:
+                services.AddDistributedMemoryCache();
+                break;
+            case CacheTypes.SqlServer:
+                /*
+                 * Run this SQL to create cache table: dotnet sql-cache create <connection string> dbo <cache table>
+                 */
+
+                if (cacheOptions.SqlServerOptions == null)
+                {
+                    throw new Exception("Missing option: CachingOptions:SqlServer");
+                }
+                services.AddDistributedSqlServerCache(options => {
+                    options.ConnectionString = configuration.GetConnectionString(cacheOptions.SqlServerOptions.ConnectionStringName);
+                    options.TableName = cacheOptions.SqlServerOptions.TableName;
+                    options.SchemaName = cacheOptions.SqlServerOptions.SchemaName;
+                });
+                break;
+            case CacheTypes.Redis:
+                if (cacheOptions.RedisOptions == null)
+                {
+                    throw new Exception("Missing option: CachingOptions:Redis");
+                }
+                services.AddStackExchangeRedisCache(options => {
+                    options.Configuration = configuration.GetConnectionString(cacheOptions.RedisOptions.ConnectionStringName);
+                });
+                break;
+            default: 
+                throw new Exception("Unknown cache type");
+        }
+        
     }
 }

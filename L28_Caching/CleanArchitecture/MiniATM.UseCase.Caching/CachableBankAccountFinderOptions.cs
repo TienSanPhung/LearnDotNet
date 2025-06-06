@@ -2,6 +2,6 @@
 
 public class CachableBankAccountFinderOptions
 {
-    public string CacheKey { get; set; } = String.Empty;
+    public string CacheKey { get; set; } = "CUSTOMER|ID:";
     public TimeSpan CacheTimeSpan { get; set; } = TimeSpan.FromSeconds(15);
 }

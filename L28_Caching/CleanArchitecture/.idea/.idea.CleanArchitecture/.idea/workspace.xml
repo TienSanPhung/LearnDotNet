@@ -9,14 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bb76993-561c-4526-9e66-c3d49ef0c5b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MiniATM.Infrastructure.InMemory/InMemoryBankAccountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniATM.Infrastructure.InMemory/InMemoryCustomerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CachingSample.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CachingSample.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure.SqlServer/Repository/SqlServerBankAccountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure.SqlServer/Repository/SqlServerBankAccountRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniATM.UseCase.Caching/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniATM.UseCase.Caching/MiniATM.UseCase.Caching.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.UseCase.Caching/MiniATM.UseCase.Caching.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/Models/CacheOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchitecture/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CachingSample.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CachingSample.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure/MiniATM.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/MiniATM.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8be3a835a33b22749161cd57a7225ef65e0c61c64c2bfd969e2e404130dd/Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -59,7 +58,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.MiniATM.Infrastructure: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.MiniATM.Infrastructure: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.MiniATM.Infrastructure: https.executor&quot;: &quot;Debug&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -121,7 +120,7 @@
       <workItem from="1748852121080" duration="2568000" />
       <workItem from="1748915939403" duration="613000" />
       <workItem from="1749174306368" duration="2774000" />
-      <workItem from="1749179494698" duration="2714000" />
+      <workItem from="1749179494698" duration="6070000" />
     </task>
     <task id="LOCAL-00001" summary="Add. một số khái niệm và các thành phần trong clean Architecture">
       <option name="closed" value="true" />
@@ -195,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749179959195</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Feat feature for InMemory Data and use caching for data">
+      <option name="closed" value="true" />
+      <created>1749182537388</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749182537388</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +232,8 @@
     <MESSAGE value="Refactor project Caching" />
     <MESSAGE value="Add project for usecase caching" />
     <MESSAGE value="Update project lesson Caching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project lesson Caching" />
+    <MESSAGE value="Feat feature for InMemory Data and use caching for data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat feature for InMemory Data and use caching for data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -242,6 +250,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MiniATM.Infrastructure/Controllers/CoreBankingController.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\pts20\Desktop\.net\LearnDotNet\L28_Caching\CleanArchitecture\MiniATM.Infrastructure\Controllers\CoreBankingController.cs" containingFunctionPresentation="Method 'ChooseBankAccountAsync'">
+            <startOffsets>
+              <option value="907" />
+            </startOffsets>
+            <endOffsets>
+              <option value="982" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
