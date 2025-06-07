@@ -9,18 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/AdminController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/ArticleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/ArticlesModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/Authenticate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/Repository/ArticleRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/PersonalBlog.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/PersonalBlog.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.UseCases/ArticleServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/ArticleServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/PersonalBlog.Infrastructure.SqlServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/PersonalBlog.Infrastructure.SqlServer.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +35,7 @@
 }]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/pts20/Desktop/.net/LearnDotNet/ProjectsDemo/WebAppProject/PersonalBlog/PBlog.DomainEntities/Admin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/pts20/Desktop/.net/LearnDotNet/ProjectsDemo/WebAppProject/PersonalBlog/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -68,6 +60,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -115,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749265146950</updated>
-      <workItem from="1749265151464" duration="11280000" />
+      <workItem from="1749265151464" duration="11877000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity domain for Personal Blog">
       <option name="closed" value="true" />
@@ -141,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749271660945</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Infrastructure for Project Personal BLog">
+      <option name="closed" value="true" />
+      <created>1749287020271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749287020271</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +166,8 @@
     <MESSAGE value="Add Entity domain for Personal Blog" />
     <MESSAGE value="Update Usecase for Personal BLog" />
     <MESSAGE value="Update Authentication Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Authentication Admin" />
+    <MESSAGE value="Add Infrastructure for Project Personal BLog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Infrastructure for Project Personal BLog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

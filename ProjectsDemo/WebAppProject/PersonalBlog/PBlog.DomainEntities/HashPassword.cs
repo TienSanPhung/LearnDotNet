@@ -3,7 +3,7 @@ using System.Text;
 
 namespace PBlog.DomainEntities;
 
-public class HashPassword
+public static class HashPassword
 {
     public static string HashPasswordSHA256(string password)
     {

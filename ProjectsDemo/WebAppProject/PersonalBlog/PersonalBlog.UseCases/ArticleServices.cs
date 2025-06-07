@@ -32,13 +32,9 @@ public class ArticleServices : IArticleManager
 
     public async Task EditArticle(Article article)
     {
-        var art = await _Article.GetById(article.Id);
-        if (art != null)
+        if (article != null)
         {
-            art.Title = article.Title;
-            art.Content = article.Content;
-            art.UpdateDate = DateTime.UtcNow;
-            await _Article.Update(art);
+            await _Article.Update(article);
             _Logger.LogInformation("The article updated. {Article}",article);
         }
         else
