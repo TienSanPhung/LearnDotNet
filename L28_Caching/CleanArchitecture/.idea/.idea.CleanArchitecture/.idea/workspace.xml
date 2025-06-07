@@ -9,12 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bb76993-561c-4526-9e66-c3d49ef0c5b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/Models/CacheOptions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CleanArchitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CleanArchitecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CachingSample.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CachingSample.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure/MiniATM.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/MiniATM.Infrastructure.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniATM.Infrastructure/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.Infrastructure/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +38,12 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f2b1d92f1ffcf2dabd664473f8c9dafa6039595ac228ce4b75a0f1619c5991/AsyncTaskMethodBuilderT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/53b0d531c06faf86bf2ae111a9a2dbce4c52a9153feb9966ade60289c71bf52/ExecutionContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8be3a835a33b22749161cd57a7225ef65e0c61c64c2bfd969e2e404130dd/Controller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/pts20/Desktop/.net/LearnDotNet/L28_Caching/CleanArchitecture/MiniATM.Infrastructure/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -58,7 +60,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.MiniATM.Infrastructure: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.MiniATM.Infrastructure: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.MiniATM.Infrastructure: https.executor&quot;: &quot;Run&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -120,7 +122,7 @@
       <workItem from="1748852121080" duration="2568000" />
       <workItem from="1748915939403" duration="613000" />
       <workItem from="1749174306368" duration="2774000" />
-      <workItem from="1749179494698" duration="6070000" />
+      <workItem from="1749179494698" duration="8585000" />
     </task>
     <task id="LOCAL-00001" summary="Add. một số khái niệm và các thành phần trong clean Architecture">
       <option name="closed" value="true" />
@@ -202,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749182537388</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Finish xong bài caching mặc dù không biết tại sao nó khng ghi vào csdl. sẽ tìm hiểu sau">
+      <option name="closed" value="true" />
+      <created>1749190708202</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749190708202</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +243,8 @@
     <MESSAGE value="Add project for usecase caching" />
     <MESSAGE value="Update project lesson Caching" />
     <MESSAGE value="Feat feature for InMemory Data and use caching for data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat feature for InMemory Data and use caching for data" />
+    <MESSAGE value="Finish xong bài caching mặc dù không biết tại sao nó khng ghi vào csdl. sẽ tìm hiểu sau" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish xong bài caching mặc dù không biết tại sao nó khng ghi vào csdl. sẽ tìm hiểu sau" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

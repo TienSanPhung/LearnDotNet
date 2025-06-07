@@ -19,8 +19,8 @@ public class CachableBankAccountFinder : IBankAccountFinder
     readonly DistributedCacheEntryOptions _cacheEntryOptions;
     public CachableBankAccountFinder(IBankAccountFinder parentFinder, IDistributedCache cache, CachableBankAccountFinderOptions options,ILogger<CachableBankAccountFinder> logger)
     {
-        this._parentFinder = parentFinder;
-        this._cache = cache;
+        this._parentFinder = parentFinder ?? throw new ArgumentNullException(nameof(parentFinder));
+        this._cache = cache ?? throw new ArgumentNullException(nameof(cache));
         this._options = options;
         this._logger = logger;
         _cacheEntryOptions =  new DistributedCacheEntryOptions()

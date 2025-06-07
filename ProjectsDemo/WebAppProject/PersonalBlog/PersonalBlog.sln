@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBlog.DomainEntities", "PBlog.DomainEntities\PBlog.DomainEntities.csproj", "{19178448-FCC6-4B89-B568-E4BF094A2BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBlog.UseCases", "PersonalBlog.UseCases\PersonalBlog.UseCases.csproj", "{EF1ABE23-1345-4D30-AAAF-31F153C890A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19178448-FCC6-4B89-B568-E4BF094A2BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19178448-FCC6-4B89-B568-E4BF094A2BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19178448-FCC6-4B89-B568-E4BF094A2BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19178448-FCC6-4B89-B568-E4BF094A2BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF1ABE23-1345-4D30-AAAF-31F153C890A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1ABE23-1345-4D30-AAAF-31F153C890A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1ABE23-1345-4D30-AAAF-31F153C890A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1ABE23-1345-4D30-AAAF-31F153C890A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

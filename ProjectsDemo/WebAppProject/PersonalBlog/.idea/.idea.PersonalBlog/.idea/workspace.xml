@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PBlog.DomainEntities/Admin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/.idea/.idea.CleanArchitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/.idea/.idea.CleanArchitecture/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.Infrastructure/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.Infrastructure/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/CommandOptions/CommandOptionBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/CommandOptions/CommandOptions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DataStore/FileDataStore/CsvDataStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DataStore/FileDataStore/JsonDataStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DataStore/IDataStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DomainEntity/Expense.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/ExpenseCLI.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/JsonData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Repository/ExpenseRepoFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Repository/FileRepository/ExpenseRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Repository/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/RoadMapProject.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/RoadMapProject.sln.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/DataJson/TaskItem.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Factory/TaskCLIFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Repository/ITaskRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Repository/JsonFileRepository/JsonTaskRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/TaskCLI.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/TaskItems.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/TaskStatus.cs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TienSanPhung"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TienSanPhung/LearnDotNet.git",
+    "accountId": "a8b68f96-49bb-4ab6-b43f-0e4ca16dd920"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2yA6gtFZWMi7vYDTCRKyplK3XgW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="" />
+      <created>1749265146950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749265146950</updated>
+      <workItem from="1749265151464" duration="579000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
