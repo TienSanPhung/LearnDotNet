@@ -1,42 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PBlog.DomainEntities/Admin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/.idea/.idea.CleanArchitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/.idea/.idea.CleanArchitecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.Infrastructure/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.Infrastructure/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../L28_Caching/CleanArchitecture/MiniATM.UseCase.Caching/CachableBankAccountFinderOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/.idea/.idea.RoadMapProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/CommandOptions/CommandOptionBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/CommandOptions/CommandOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DataStore/FileDataStore/CsvDataStore.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DataStore/FileDataStore/JsonDataStore.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DataStore/IDataStore.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/DomainEntity/Expense.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/ExpenseCLI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/JsonData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Repository/ExpenseRepoFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Repository/FileRepository/ExpenseRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/ExpenseCLI/Repository/IRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/RoadMapProject.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/RoadMapProject.sln.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/DataJson/TaskItem.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Factory/TaskCLIFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Repository/ITaskRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/Repository/JsonFileRepository/JsonTaskRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/TaskCLI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/TaskItems.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadMapProject/TaskCLI/TaskStatus.cs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/ArticleServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/IAdminManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/IArticleManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/IRepository/IAdminRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/IRepository/IArticleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PBlog.DomainEntities/Admin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PBlog.DomainEntities/Admin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.UseCases/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/AdminServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.UseCases/PersonalBlog.UseCases.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/PersonalBlog.UseCases.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +35,7 @@
     "accountId": "a8b68f96-49bb-4ab6-b43f-0e4ca16dd920"
   }
 }]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 2
@@ -90,13 +68,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749265146950</updated>
-      <workItem from="1749265151464" duration="579000" />
+      <workItem from="1749265151464" duration="4409000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Entity domain for Personal Blog">
+      <option name="closed" value="true" />
+      <created>1749267470076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749267470076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -111,6 +99,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add Entity domain for Personal Blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Entity domain for Personal Blog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
