@@ -1,0 +1,16 @@
+﻿@model IEnumerable<PBlog.DomainEntities.Article>
+
+<h1>Quản lý bài viết</h1>
+<a asp-action="Add">Thêm bài viết mới</a>
+
+@foreach (var article in Model)
+{
+    <div>
+        <h3>@article.Title</h3>
+        <h4>@article.PublishDate</h4>
+        <a asp-action="Edit" asp-route-id="@article.Id">Sửa</a> |
+        <form asp-action="Delete" asp-route-id="@article.Id" method="post" style="display:inline;">
+            <button type="submit">Xóa</button>
+        </form>
+    </div>
+}

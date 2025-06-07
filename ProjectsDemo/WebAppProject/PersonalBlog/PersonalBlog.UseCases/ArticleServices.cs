@@ -35,7 +35,10 @@ public class ArticleServices : IArticleManager
         var art = await _Article.GetById(article.Id);
         if (art != null)
         {
-            await _Article.Update(article);
+            art.Title = article.Title;
+            art.Content = article.Content;
+            art.UpdateDate = DateTime.UtcNow;
+            await _Article.Update(art);
             _Logger.LogInformation("The article updated. {Article}",article);
         }
         else

@@ -6,4 +6,12 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\PersonalBlog.UseCases\PersonalBlog.UseCases.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Views\Admin\" />
+    </ItemGroup>
+
 </Project>

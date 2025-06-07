@@ -1,21 +1,31 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PersonalBlog.Infrastructure.Models;
+using PersonalBlog.UseCases;
 
 namespace PersonalBlog.Infrastructure.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    readonly IArticleManager _articleManager;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IArticleManager  articleManager)
     {
         _logger = logger;
+        this._articleManager = articleManager ??  throw new ArgumentNullException(nameof(articleManager));;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var articles = await _articleManager.GetAllArticle();
+        return View(articles);
+    }
+
+    public async Task<IActionResult> Detail(Guid id)
+    {
+        var article = await _articleManager.GetArticleById(id);
+        return View(article);
     }
 
     public IActionResult Privacy()

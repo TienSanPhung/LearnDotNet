@@ -17,10 +17,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
-
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
@@ -28,4 +24,63 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+ body {
+   font-family: 'Comic Neue', cursive;
+   margin: 2rem;
+   background-color: #f9f9f9;
+ }
+.container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.box {
+  border: 2px solid black;
+  padding: 1rem;
+  background-color: white;
+  flex: 1;
+}
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+.article-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.admin-buttons {
+  margin-left: 1rem;
+}
+.btn {
+  border: none;
+  background: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.btn:hover {
+  text-decoration: underline;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+.form-actions button {
+  padding: 0.5rem 1rem;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  cursor: pointer;
 }
