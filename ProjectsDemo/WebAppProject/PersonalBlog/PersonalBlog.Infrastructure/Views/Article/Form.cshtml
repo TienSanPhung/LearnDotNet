@@ -1,7 +1,7 @@
 ﻿@model PBlog.DomainEntities.Article
 
-<div class="container">
-    <h1>@(Model.Id == Guid.Empty ? "Create New Article" : "Edit Article")</h1>
+<div class="container mt-5">
+    <h1>@(Model.Id == Guid.Empty ? "New Article" : "Update Article")</h1>
 
     <form method="post" action="@(Model.Id == Guid.Empty ? Url.Action("Add") : Url.Action("Edit"))">
         @if (Model.Id != Guid.Empty)
@@ -10,7 +10,7 @@
         }
 
         <div class="mb-3">
-            <label asp-for="Title" class="form-label">Title</label>
+            <label asp-for="Title" class="form-label">Article Title</label>
             <input asp-for="Title" class="form-control" required />
             <span asp-validation-for="Title" class="text-danger"></span>
         </div>
@@ -21,16 +21,11 @@
             <span asp-validation-for="Content" class="text-danger"></span>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 d-flex justify-content-between">
             <button type="submit" class="btn btn-primary">
-                @(Model.Id == Guid.Empty ? "Create" : "Update")
+                @(Model.Id == Guid.Empty ? "Publish" : "Update")
             </button>
             <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
 </div>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-    <!-- Thêm rich text editor nếu cần -->
-}

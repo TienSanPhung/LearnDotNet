@@ -24,12 +24,5 @@ public class BlogDbContext : DbContext
         
 
     }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-
-        modelBuilder.Entity<Admin>()
-            .HasNoKey(); // Xác định rằng thực thể này không có khóa chính
-    }
 
 }

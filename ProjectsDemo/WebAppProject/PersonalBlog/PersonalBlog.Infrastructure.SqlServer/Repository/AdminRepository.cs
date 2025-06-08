@@ -17,19 +17,21 @@ public class AdminRepository : IAdminRepository
 
     public async  Task<Admin> GetAdmin()
     {
-        return await _Context.Admins.FirstOrDefaultAsync();
+        return await _Context.Admins.Where(x => x.Id == 1).FirstOrDefaultAsync();
     }
 
     public async Task SetPassword(string Password)
     {
-       var admin = await _Context.Admins.FirstOrDefaultAsync();
+       var admin = await _Context.Admins.Where(x => x.Id == 1).FirstOrDefaultAsync();
+       
        admin.Password = Password;
+       _Context.Admins.Update(admin);
        await _Context.SaveChangesAsync();
     }
 
     public async Task ReSetPassword()
     {
-        var admin = await _Context.Admins.FirstOrDefaultAsync();
+        var admin = await _Context.Admins.Where(x => x.Id == 1).FirstOrDefaultAsync();
         admin.Password = HashPassword.HashPasswordSHA256("admin");
         await _Context.SaveChangesAsync();
     }
