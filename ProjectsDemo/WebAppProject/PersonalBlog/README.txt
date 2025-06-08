@@ -1,4 +1,6 @@
-﻿# Bạn được yêu cầu xây dựng một blog cá nhân nơi bạn có thể viết và xuất bản bài viết.
+﻿Project Task Blog URL: https://roadmap.sh/projects/personal-blog
+
+# Bạn được yêu cầu xây dựng một blog cá nhân nơi bạn có thể viết và xuất bản bài viết.
  Blog sẽ có hai phần: phần khách và phần quản trị.
 
 Phần dành cho khách — Danh sách các trang mà bất kỳ ai cũng có thể truy cập:
