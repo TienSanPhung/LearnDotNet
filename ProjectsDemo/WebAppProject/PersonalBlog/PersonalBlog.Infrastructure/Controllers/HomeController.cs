@@ -25,6 +25,12 @@ public class HomeController : Controller
     public async Task<IActionResult> Detail(Guid id)
     {
         var article = await _articleManager.GetArticleById(id);
+        if (article is null)
+        {
+            _logger.LogWarning($"Article with ID {id} not found.");
+            return NotFound();
+        }
+
         return View(article);
     }
 

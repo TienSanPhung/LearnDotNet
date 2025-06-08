@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using PersonalBlog.Infrastructure.SqlServer.ConText;
 using PersonalBlog.Infrastructure.SqlServer.Repository;
@@ -14,9 +16,25 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+        builder.Services.AddDistributedMemoryCache();
+        builder.Services.AddSession(options => 
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+        builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+               options.LoginPath = "/Admin/Login";
+                options.LogoutPath = "/Admin/Logout";
+                options.AccessDeniedPath = "/Admin/Login";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+                options.Cookie.Name = "PersonalBlog"; 
+            });
         RegisterInfrastructureServices(builder.Configuration, builder.Services);
-
-
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -29,7 +47,8 @@ public class Program
 
         app.UseHttpsRedirection();
         app.UseRouting();
-
+        app.UseSession();
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapStaticAssets();
@@ -43,13 +62,14 @@ public class Program
 
     static void RegisterInfrastructureServices(ConfigurationManager configuration, IServiceCollection services)
     {
+        
         services.AddDbContext<BlogDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("PersonalBlog")));
-        services.AddTransient<IArticleRepository>(services => new ArticleRepository(services.GetService<BlogDbContext>()));
-        services.AddTransient<IAdminRepository>(services => new AdminRepository(services.GetService<BlogDbContext>()));
+        services.AddTransient<IArticleRepository>(services => new ArticleRepository(services.GetRequiredService<BlogDbContext>()));
+        services.AddTransient<IAdminRepository>(services => new AdminRepository(services.GetRequiredService<BlogDbContext>()));
         services.AddTransient<IArticleManager>(services => new ArticleServices(
-            services.GetService<Logger<ArticleServices>>(),services.GetService<IArticleRepository>()));
+            services.GetRequiredService<ILogger<ArticleServices>>(),services.GetRequiredService<IArticleRepository>()));
         services.AddTransient<IAdminManager>(services => new AdminServices(
-            services.GetService<Logger<AdminServices>>(),services.GetService<IAdminRepository>()));
+            services.GetRequiredService<ILogger<AdminServices>>(),services.GetRequiredService<IAdminRepository>()));
     }
 }

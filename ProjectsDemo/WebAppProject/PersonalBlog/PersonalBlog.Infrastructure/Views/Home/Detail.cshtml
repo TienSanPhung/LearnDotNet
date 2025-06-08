@@ -1,0 +1,25 @@
+﻿@model PBlog.DomainEntities.Article
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li class="breadcrumb-item active">Article</li>
+        </ol>
+    </nav>
+
+    <article class="blog-post">
+        <h1 class="blog-post-title">@Model.Title</h1>
+        <p class="blog-post-meta">@Model.PublishDate.ToString("MMMM dd, yyyy")</p>
+        
+        <div class="blog-post-content">
+            @Html.Raw(Model.Content)
+        </div>
+    </article>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Articles
+        </a>
+    </div>
+</div>

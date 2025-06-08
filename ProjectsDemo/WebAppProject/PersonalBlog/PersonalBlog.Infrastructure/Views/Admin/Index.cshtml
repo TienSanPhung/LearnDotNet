@@ -1,0 +1,60 @@
+﻿@model dynamic
+
+<div class="container">
+    <h1 class="mb-4">Admin Dashboard</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Change Password</h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="@Url.Action("ChangesPassword", "Admin")">
+                        <div class="mb-3">
+                            <label for="oldPassword" class="form-label">Current Password</label>
+                            <input type="password" class="form-control" id="oldPassword" 
+                                   name="oldPassword" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">new Password</label>
+                            <input type="password" class="form-control" id="newPassword" 
+                                   name="newPassword" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Change Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Reset Password</h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="@Url.Action("ResetPassword", "Admin")">
+                        <p class="text-warning">Warning: This will reset the admin password to default.</p>
+                        <button type="submit" class="btn btn-warning" 
+                                onclick="return confirm('Are you sure you want to reset the password?');">
+                            Reset Password
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success mt-4" role="alert">
+            @TempData["Success"]
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger mt-4" role="alert">
+            @TempData["Error"]
+        </div>
+    }
+</div>

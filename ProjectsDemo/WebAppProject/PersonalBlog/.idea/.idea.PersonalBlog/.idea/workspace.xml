@@ -9,39 +9,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/Repository/ArticleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/LoginModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Admin/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Admin/Index.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Admin/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Admin/Login.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Form.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Form.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Detail.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Detail.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/PersonalBlog.Infrastructure.SqlServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/PersonalBlog.Infrastructure.SqlServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/ArticleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/ArticleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/ArticlesModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/ArticlesModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/Authenticate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Models/ChangesPasswordModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/PersonalBlog.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/PersonalBlog.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.UseCases/AdminServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/AdminServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.UseCases/ArticleServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.UseCases/ArticleServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalBlog.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "TienSanPhung"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TienSanPhung&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/TienSanPhung/LearnDotNet.git",
-    "accountId": "a8b68f96-49bb-4ab6-b43f-0e4ca16dd920"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TienSanPhung/LearnDotNet.git&quot;,
+    &quot;accountId&quot;: &quot;a8b68f96-49bb-4ab6-b43f-0e4ca16dd920&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/pts20/Desktop/.net/LearnDotNet/ProjectsDemo/WebAppProject/PersonalBlog/PBlog.DomainEntities/Admin.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/pts20/Desktop/.net/LearnDotNet/ProjectsDemo/WebAppProject/PersonalBlog/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ae5a0322dbe6ebe61e4a9bd573e376bb7c713e068b330203771a988bdda6b/WebApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/345b876796a6b1d8833bccaf6e5317fae0965079e5256835674f8cf9e8d93/AuthenticationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b3575a2f41d7c2dbfaa36e866b8a361e11dd7223ff82bc574c1d5d4b7522f735/Future.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bde5a0e5fb6491e71267549d64518746e9cfebd10d35f355da6815637e3c/AuthenticationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d7f6bd65ecce6228f0f70982b61dd38ebcc554d98ff7cc551a9626daacbcda6/DeveloperExceptionPageMiddlewareImpl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e2ad5ed267c5b04a25576510a2ed45385bd97967b01bffbdc4661884addee8fa/AuthenticationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f53868e293d4af914f24c3e72181cca5136758f5d8ed89e4a38e452cb12847e2/HostApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f5f29f8ad09a2791dd1b4377273475352366e26dff81e2144329cf5411ba16cd/AuthAppBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2yA6gtFZWMi7vYDTCRKyplK3XgW" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,25 +83,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.PersonalBlog.Infrastructure: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Razor"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Razor&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PersonalBlog.Infrastructure: http">
     <configuration name="PersonalBlog.Infrastructure: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/PersonalBlog.Infrastructure/PersonalBlog.Infrastructure.csproj" />
@@ -109,6 +144,10 @@
       <option name="presentableId" value="Default" />
       <updated>1749265146950</updated>
       <workItem from="1749265151464" duration="11877000" />
+      <workItem from="1749288741741" duration="12572000" />
+      <workItem from="1749347340327" duration="7541000" />
+      <workItem from="1749355220906" duration="6904000" />
+      <workItem from="1749367809564" duration="3017000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity domain for Personal Blog">
       <option name="closed" value="true" />
@@ -142,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749287020271</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update Article and AdminControlller">
+      <option name="closed" value="true" />
+      <created>1749307768616</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749307768616</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +214,8 @@
     <MESSAGE value="Update Usecase for Personal BLog" />
     <MESSAGE value="Update Authentication Admin" />
     <MESSAGE value="Add Infrastructure for Project Personal BLog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Infrastructure for Project Personal BLog" />
+    <MESSAGE value="Update Article and AdminControlller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Article and AdminControlller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -184,6 +232,14 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Admin/Login.cshtml</url>
+          <line>5</line>
+          <properties isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

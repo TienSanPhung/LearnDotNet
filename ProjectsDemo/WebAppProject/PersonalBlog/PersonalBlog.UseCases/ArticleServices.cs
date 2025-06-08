@@ -11,20 +11,19 @@ public class ArticleServices : IArticleManager
 
     public ArticleServices(ILogger<ArticleServices> logger, IArticleRepository repository)
     {
-        this._Logger = logger;
-        this._Article =  repository ??  throw new ArgumentNullException(nameof(repository));
+        _Logger = logger;
+        _Article =  repository ??  throw new ArgumentNullException(nameof(repository));
     }
 
     public async Task AddArticle(Article article)
     {
         if (article != null)
         {
+            _Logger.LogInformation("Add article");
             await _Article.Add(article);
-            _Logger.LogInformation("The article added. {Article}",article);
         }
         else
         {
-            _Logger.LogInformation("The article could not be added.");
             throw new  ArgumentNullException(nameof(article));
         }
         
@@ -34,12 +33,12 @@ public class ArticleServices : IArticleManager
     {
         if (article != null)
         {
+            _Logger.LogInformation("Edit article");
             await _Article.Update(article);
-            _Logger.LogInformation("The article updated. {Article}",article);
         }
         else
         {
-            _Logger.LogInformation("The article could not be updated.");
+           _Logger.LogWarning("Edit article");
             throw new  ArgumentNullException(nameof(article));
         }
     }
@@ -49,27 +48,28 @@ public class ArticleServices : IArticleManager
         var art = await _Article.GetById(id);
         if (art != null)
         {
+            _Logger.LogInformation("Delete article");
             await _Article.Delete(id);
-            _Logger.LogInformation("The article delete.");
         }
         else
         {
-            _Logger.LogInformation("The article could not finded.");
             throw new  ArgumentNullException();
         }
     }
 
     public async Task<Article> GetArticleById(Guid id)
     {
-        if (id != Guid.Empty)
+        if (id == Guid.Empty)
         {
-            _Logger.LogInformation("The article id's {ArticleId} counldn't find", id);
+            _Logger.LogWarning("Get article by id");
+            throw new ArgumentNullException();
         }
         return await _Article.GetById(id);
     }
 
     public async Task<IEnumerable<Article>> GetAllArticle()
     {
+        _Logger.LogInformation("Get all article");
         return await _Article.GetAll() ?? [];
     }
 }

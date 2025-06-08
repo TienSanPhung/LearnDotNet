@@ -40,9 +40,9 @@ public class AdminServices : IAdminManager
         if (!string.IsNullOrEmpty(Password))
         {
             var admin = await  _AdminRepository.GetAdmin();
-            if (admin.Password == Password)
+            if (admin.Password == HashPassword.HashPasswordSHA256(Password))
             {
-                _Logger.LogInformation("The admin password is correct");
+                _Logger.LogInformation("The password is correct.");
                 return true;
             }
             else
