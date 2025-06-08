@@ -4,6 +4,7 @@
 # Project mình làm luyện tập, lấy đề bài từ roadmap.sh
 - Project Task URL : https://roadmap.sh/projects/task-tracker
 - Project Expense URL : https://roadmap.sh/projects/expense-tracker
+- Project Personal Blog URL : https://roadmap.sh/projects/blogscape
 # Danh sách các bài học:
 
 - Stream và File

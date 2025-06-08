@@ -8,18 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalBlog/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PBlog.DomainEntities/Admin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PBlog.DomainEntities/Admin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/ConText/BlogDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/ConText/BlogDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/Migrations/BlogDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/Migrations/BlogDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/Repository/AdminRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure.SqlServer/Repository/AdminRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Form.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Form.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Article/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Detail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Detail.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="214ecb64-0e8e-4612-9c74-718964ab1b04" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,10 +33,9 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ae5a0322dbe6ebe61e4a9bd573e376bb7c713e068b330203771a988bdda6b/WebApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f2b1d92f1ffcf2dabd664473f8c9dafa6039595ac228ce4b75a0f1619c5991/AsyncTaskMethodBuilderT.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/345b876796a6b1d8833bccaf6e5317fae0965079e5256835674f8cf9e8d93/AuthenticationService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b3575a2f41d7c2dbfaa36e866b8a361e11dd7223ff82bc574c1d5d4b7522f735/Future.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bde5a0e5fb6491e71267549d64518746e9cfebd10d35f355da6815637e3c/AuthenticationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e2ad5ed267c5b04a25576510a2ed45385bd97967b01bffbdc4661884addee8fa/AuthenticationHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f53868e293d4af914f24c3e72181cca5136758f5d8ed89e4a38e452cb12847e2/HostApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f5f29f8ad09a2791dd1b4377273475352366e26dff81e2144329cf5411ba16cd/AuthAppBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/pts20/Desktop/.net/LearnDotNet/ProjectsDemo/WebAppProject/PersonalBlog/PersonalBlog.Infrastructure/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -134,7 +123,7 @@
       <workItem from="1749347340327" duration="7541000" />
       <workItem from="1749355220906" duration="6904000" />
       <workItem from="1749367809564" duration="3017000" />
-      <workItem from="1749373500673" duration="8310000" />
+      <workItem from="1749373500673" duration="8659000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity domain for Personal Blog">
       <option name="closed" value="true" />
@@ -184,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749374716802</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update and Fix changes password,resetpassword">
+      <option name="closed" value="true" />
+      <created>1749382737459</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749382737459</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +208,8 @@
     <MESSAGE value="Add Infrastructure for Project Personal BLog" />
     <MESSAGE value="Update Article and AdminControlller" />
     <MESSAGE value="Update Controller and View Razor pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Controller and View Razor pages" />
+    <MESSAGE value="Update and Fix changes password,resetpassword" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update and Fix changes password,resetpassword" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
