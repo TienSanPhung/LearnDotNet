@@ -1,65 +1,154 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Unit Converter";
 }
 
 <div class="converter-container">
-        <div class="panel" id="inputPanel">
-            <h2>Unit Converter</h2>
-            <div class="tabs">
-                <a href="#" class="active">Length</a>
-                <a href="#">Weight</a>
-                <a href="#">Temperature</a>
-            </div>
-            <div class="form-group">
-                <label>Enter the length to convert</label>
-                <input type="text" id="value" />
-            </div>
-            <div class="form-group">
-                <label>Unit to Convert from</label>
-                <input type="text" id="fromUnit" />
-            </div>
-            <div class="form-group">
-                <label>Unit to Convert to</label>
-                <input type="text" id="toUnit" />
-            </div>
-            <button onclick="convert()">Convert</button>
+    <div class="panel" id="inputPanel">
+        <h2>Unit Converter</h2>
+        <div class="tabs">
+            <a href="#" class="tab active" data-type="length">Length</a>
+            <a href="#" class="tab" data-type="weight">Weight</a>
+            <a href="#" class="tab" data-type="temperature">Temperature</a>
         </div>
-
-        <div class="panel" id="resultPanel" style="display:none;">
-            <h2>Unit Converter</h2>
-            <div class="tabs">
-                <a href="#" class="active">Length</a>
-                <a href="#">Weight</a>
-                <a href="#">Temperature</a>
-            </div>
-            <div class="result" id="resultText"></div>
-            <button onclick="resetForm()">Reset</button>
+        <div class="form-group border-black">
+            <label for="value">Enter Value</label>
+            <input type="number" id="value" class="form-control" required />
         </div>
-    </div>
-<script>
-        function convert() {
-            const value = document.getElementById('value').value;
-            const fromUnit = document.getElementById('fromUnit').value;
-            const toUnit = document.getElementById('toUnit').value;
-
-            const xhr = new XMLHttpRequest();
-            xhr.open("POST", "ConvertHandler.aspx", true);
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('inputPanel').style.display = 'none';
-                    document.getElementById('resultPanel').style.display = 'block';
-                    document.getElementById('resultText').innerText = `${value} ${fromUnit} = ${xhr.responseText}${toUnit}`;
+        <div class="form-group border-black">
+            <label for="fromUnit">From Unit</label>
+            <select id="fromUnit" class="form-control">
+                @foreach (var unit in ViewBag.LengthUnits)
+                {
+                    <option value="@unit">@unit</option>
                 }
+            </select>
+        </div>
+        <div class="form-group border-black">
+            <label for="toUnit">To Unit</label>
+            <select id="toUnit" class="form-control">
+                @foreach (var unit in ViewBag.LengthUnits)
+                {
+                    <option value="@unit">@unit</option>
+                }
+            </select>
+        </div>
+        <button onclick="convert()" class="btn btn-outline-dark">Convert</button>
+    </div>
+
+    <div class="panel" id="resultPanel" style="display:none;">
+        <h2>Result</h2>
+        <div class="result" id="resultText"></div>
+        <button onclick="resetForm()" class="btn btn-secondary mt-3">Convert Another</button>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+        const lengthUnits = @Json.Serialize(ViewBag.LengthUnits);
+        const weightUnits = @Json.Serialize(ViewBag.WeightUnits);
+        const temperatureUnits = @Json.Serialize(ViewBag.TemperatureUnits);
+
+        function updateUnits(type) {
+            const fromSelect = document.getElementById('fromUnit');
+            const toSelect = document.getElementById('toUnit');
+            let units = [];
+
+            switch(type) {
+                case 'length':
+                    units = lengthUnits;
+                    break;
+                case 'weight':
+                    units = weightUnits;
+                    break;
+                case 'temperature':
+                    units = temperatureUnits;
+                    break;
+            }
+
+            // Clear existing options
+            fromSelect.innerHTML = '';
+            toSelect.innerHTML = '';
+
+            // Add new options
+            units.forEach(unit => {
+                fromSelect.add(new Option(unit, unit));
+                toSelect.add(new Option(unit, unit));
+            });
+        }
+
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Update active state
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                // Update units based on selected type
+                const type = this.getAttribute('data-type');
+                updateUnits(type);
+
+                // Reset form
+                resetForm();
+            });
+        });
+
+        function formatNumber(number) {
+            // Chuyển số thành chuỗi với độ chính xác cao
+            return number.toLocaleString('fullwide', {
+                useGrouping: false,
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 20
+            });
+        }
+        function convert() {
+            const value = parseFloat(document.getElementById('value').value);
+            if (isNaN(value)) {
+                alert('Please enter a valid number');
+                return;
+            }
+
+            const data = {
+                value: value,
+                fromUnit: document.getElementById('fromUnit').value,
+                toUnit: document.getElementById('toUnit').value,
+                type: document.querySelector('.tab.active').getAttribute('data-type')
             };
-            xhr.send(`value=${value}&fromUnit=${fromUnit}&toUnit=${toUnit}`);
+
+            fetch('/Home/Convert', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('inputPanel').style.display = 'none';
+                    document.getElementById('resultPanel').style.display = 'block'; 
+
+                    document.getElementById('resultText').innerText = 
+                        `${value} ${data.fromUnit} = ${formatNumber(data.result)} ${data.toUnit}`;
+                } else {
+                    alert(data.error);
+                }
+            })
+            .catch(error => {
+                alert('An error occurred during conversion');
+                console.error('Error:', error);
+            });
         }
 
         function resetForm() {
+            document.getElementById('value').value = '';
             document.getElementById('inputPanel').style.display = 'block';
             document.getElementById('resultPanel').style.display = 'none';
-            document.getElementById('value').value = '';
-            document.getElementById('fromUnit').value = '';
-            document.getElementById('toUnit').value = '';
         }
+
+        // Initialize with length units
+        updateUnits('length');
     </script>
+}
