@@ -17,9 +17,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
@@ -29,3 +26,80 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #f9f9f9;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.converter-container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.panel {
+  border: 2px solid #000;
+  padding: 20px;
+  width: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.tabs a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.tabs a.active {
+  text-decoration: underline;
+  color: blue;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  border: 2px solid #000;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+

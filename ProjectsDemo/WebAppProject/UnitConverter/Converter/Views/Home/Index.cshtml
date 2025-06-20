@@ -2,7 +2,64 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="converter-container">
+        <div class="panel" id="inputPanel">
+            <h2>Unit Converter</h2>
+            <div class="tabs">
+                <a href="#" class="active">Length</a>
+                <a href="#">Weight</a>
+                <a href="#">Temperature</a>
+            </div>
+            <div class="form-group">
+                <label>Enter the length to convert</label>
+                <input type="text" id="value" />
+            </div>
+            <div class="form-group">
+                <label>Unit to Convert from</label>
+                <input type="text" id="fromUnit" />
+            </div>
+            <div class="form-group">
+                <label>Unit to Convert to</label>
+                <input type="text" id="toUnit" />
+            </div>
+            <button onclick="convert()">Convert</button>
+        </div>
+
+        <div class="panel" id="resultPanel" style="display:none;">
+            <h2>Unit Converter</h2>
+            <div class="tabs">
+                <a href="#" class="active">Length</a>
+                <a href="#">Weight</a>
+                <a href="#">Temperature</a>
+            </div>
+            <div class="result" id="resultText"></div>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+    </div>
+<script>
+        function convert() {
+            const value = document.getElementById('value').value;
+            const fromUnit = document.getElementById('fromUnit').value;
+            const toUnit = document.getElementById('toUnit').value;
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "ConvertHandler.aspx", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('inputPanel').style.display = 'none';
+                    document.getElementById('resultPanel').style.display = 'block';
+                    document.getElementById('resultText').innerText = `${value} ${fromUnit} = ${xhr.responseText}${toUnit}`;
+                }
+            };
+            xhr.send(`value=${value}&fromUnit=${fromUnit}&toUnit=${toUnit}`);
+        }
+
+        function resetForm() {
+            document.getElementById('inputPanel').style.display = 'block';
+            document.getElementById('resultPanel').style.display = 'none';
+            document.getElementById('value').value = '';
+            document.getElementById('fromUnit').value = '';
+            document.getElementById('toUnit').value = '';
+        }
+    </script>
